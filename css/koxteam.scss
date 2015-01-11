@@ -1,0 +1,490 @@
+@import 'bootstrap';
+
+// --------------------------------------------------------------------------
+// ---- VARIABLES -----------------------------------------------------------
+// --------------------------------------------------------------------------
+
+// Bootstrap screen widths
+$bs-screen-md: 992px;
+$bs-screen-lg: 1200px;
+
+// Standard margins
+$M: 20px;
+$bs-margin: 15px;
+
+// Colors
+$color-almost-black:     #111;
+$color-blackish:         #2b2b2b;
+$color-very-dark-gray:   #333;
+$color-dark-gray:        #888;
+$color-medium-dark-gray: #aaa;
+$color-gray:             #ccc;
+$color-pale-gray:        #eee;
+$color-almost-white:     #fcfcfc;
+
+$color-bg-pale-gray:     #f9f9f9;
+$color-bg-gray:          #f0f0f0;
+
+$color-maroon: #960628;
+
+// Borders
+$border-thickness: 1px;
+$border-dark-gray: $border-thickness solid $color-dark-gray;
+$border-gray:      $border-thickness solid $color-gray;
+$border-pale-gray: $border-thickness solid $color-pale-gray;
+
+// Font sizes
+$font-size-article:       12px;
+$font-size-article-h1:    22px;
+$font-size-article-h2:    20px;
+$font-size-blockquote-1x: 14px;
+
+
+// --------------------------------------------------------------------------
+// ---- BOOTSTRAP OVERWRITES ------------------------------------------------
+// --------------------------------------------------------------------------
+
+a {
+  color: $color-very-dark-gray;
+  
+  &:hover {
+    color: $color-very-dark-gray;
+  }
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.kt-btn-black {
+  background-color: $color-blackish;
+  color:            $color-almost-white;
+  
+  &:hover {
+    background-color: $color-almost-black;
+    color:            $color-almost-white;
+  }
+}
+
+// --------------------------------------------------------------------------
+// ---- KT MIXINS -----------------------------------------------------------
+// --------------------------------------------------------------------------
+
+@mixin kt-bordered {
+  border: $border-gray;
+}
+@mixin kt-bordered-pale {
+  border: $border-pale-gray;
+}
+@mixin kt-col-v-base {
+  float: none;
+  display: inline-block;
+}
+@mixin kt-col-v-center {
+  @include kt-col-v-base;
+  vertical-align: middle;
+}
+@mixin kt-col-v-bottom {
+  @include kt-col-v-base;
+  vertical-align: bottom;
+}
+@mixin kt-fit-to-width {
+  max-width: 100%;
+}
+@mixin kt-bg-pale-gray {
+  background-color: $color-bg-pale-gray;
+}
+@mixin kt-bg-gray {
+  background-color: $color-bg-gray;
+}
+
+// --------------------------------------------------------------------------
+// ---- KT REUSABLE ---------------------------------------------------------
+// --------------------------------------------------------------------------
+
+.kt-box {
+  @include kt-bordered;
+  margin-bottom: $M;
+  padding: $M/2;
+}
+.kt-social {
+  @extend .kt-box;
+  margin: $M 0;
+}
+.kt-btn-black {
+  // TODO
+}
+
+// --------------------------------------------------------------------------
+// ---- KT BODY -------------------------------------------------------------
+// --------------------------------------------------------------------------
+
+#kt-body {
+  @include kt-bg-pale-gray;
+  background-image:  url('../img/bg.png'); 
+  background-repeat: repeat-x; 
+  background-size:   20px 460px;
+  padding-top:       $M/2;
+}
+
+// --------------------------------------------------------------------------
+// ---- KT LOGIN PANEL ------------------------------------------------------
+// --------------------------------------------------------------------------
+
+#kt-login-panel {
+  @extend .col-md-12;
+  @extend .text-right;
+  
+  a {
+    color: $color-medium-dark-gray;
+    
+    span {
+      color:        #666;
+      margin-right: $M/3;
+    }
+    
+    &:hover {
+      color: $color-pale-gray;
+      span { color: $color-medium-dark-gray; }
+    }
+  }
+}
+
+// --------------------------------------------------------------------------
+// ---- KT LOGO AND SEARCH BAR ----------------------------------------------
+// --------------------------------------------------------------------------
+
+#kt-logo-search {
+  margin-top: $M/2;
+  
+  #kt-col-logo {
+    @extend .col-md-4;
+    @include kt-col-v-center;
+  }
+  
+  #kt-col-search-bar {
+    @extend .col-md-5;
+    @extend .col-md-offset-3;
+    @include kt-col-v-bottom;
+    
+    .form-group {
+      margin: 0;
+      
+      .form-control {
+        border:           $border-dark-gray;
+        border-right:     0;
+        border-radius:    0;
+        background-color: black;
+        color:            $color-medium-dark-gray;
+        outline: none !important;
+      }
+      
+      .input-group-btn {
+        border:  $border-dark-gray;
+        border-left: 0;
+        
+        .btn {
+          background-color: black;
+          outline:          none;
+          
+          span {
+            color: $color-maroon;
+          }
+        }
+      }
+    }
+  }
+}
+
+// --------------------------------------------------------------------------
+// ---- KT NAVBAR (ON TOP OF BOOTSTRAP NAVBAR) ------------------------------
+// --------------------------------------------------------------------------
+
+#kt-navbar {
+  border-radius:    0;
+  background-color: $color-blackish;
+  margin-top:       -33px;
+  
+  a {
+    padding: $M $M*2;
+  }
+  
+  .navbar-collapse {
+    padding-left:  0;
+    padding-right: 0;
+  }
+  
+  $border-navbar: 2px solid $color-almost-black;
+  
+  .nav li {
+    border-left: $border-navbar;
+    box-shadow:  3px 0 1px #555;
+    
+    &:hover {
+      background-color: $color-maroon;
+    }
+    
+    &:first-child {
+      border-left: 0;
+    }
+    
+    &:last-child {
+      border-right: $border-navbar;
+      box-shadow: 1px 0 1px #555;
+    }
+    
+    a {
+      color: $color-almost-white;
+      
+      .glyphicon {
+        font-size:   16px;
+        line-height: 20px;
+      }
+      
+      @media (max-width: $bs-screen-lg) {
+        padding: $M/1.33 $M*1.5;
+      }
+
+    }
+  
+  }
+}
+
+// --------------------------------------------------------------------------
+// ---- KT WHITE SHEET ------------------------------------------------------
+// --------------------------------------------------------------------------
+
+#kt-white-sheet {
+  @include kt-bordered-pale;
+  
+  background-color: white; 
+  width:            1260px; 
+  margin:           auto; 
+  margin-top:       70px; 
+  
+  @media (max-width: 1260px) {
+    width: auto;
+  }
+}
+
+// --------------------------------------------------------------------------
+// ---- KT RIGHT PANEL ------------------------------------------------------
+// --------------------------------------------------------------------------
+
+.kt-rigth-panel {
+  @extend .col-md-4;
+  margin-left:   $bs-margin;
+  margin-right: -$bs-margin;
+  
+  @media (max-width: $bs-screen-md) {
+    margin-left:  -$bs-margin;
+    margin-right: -$bs-margin;
+  }
+  
+  .kt-table {
+    width:         100%;
+    border-top:    $border-gray;
+    margin-bottom: $M;
+    
+    &:last-child {
+      margin-bottom: $M*2;
+    }
+    
+    .kt-table-row-header {
+      padding: $M;
+      
+      h3 { margin: 0 !important; }
+      h4 { margin: 0 !important; }
+      
+      .kt-table-col-left {
+        @extend .col-md-3;
+        @include kt-col-v-center;
+      }
+      
+      .kt-table-col-right {
+        @extend .col-md-9;
+        @include kt-col-v-center;
+      }
+      
+      .glyphicon {
+        font-size: $M*2 !important;  
+      }
+    }
+    
+    .kt-table-row {
+      padding: $M/2 0;
+      
+      .kt-table-col-image {
+        @extend .col-xs-2;
+        @extend .col-sm-1;
+        @extend .col-md-2;
+        @include kt-col-v-center;
+        padding-right: $M/4;
+        
+        img {
+          @include kt-bordered;
+          @include kt-fit-to-width;
+        }
+      }
+      
+      .kt-table-col-article-info {
+        @extend .col-xs-10;
+        @extend .col-sm-11;
+        @extend .col-md-10;
+        @include kt-col-v-center;
+        
+        a {
+          font-weight: bold;
+          color: $color-maroon;
+        }
+        .kt-table-article-timestamp {
+          font-size: 0.75em;
+        }
+      }
+      
+    }
+    
+    .kt-table-row-header, .kt-table-row {
+      border:           $border-gray;
+      border-top:       0;
+      background-color: $color-bg-pale-gray;
+    }
+    
+  }
+}
+
+// --------------------------------------------------------------------------
+// ---- KT ARTICLE ----------------------------------------------------------
+// --------------------------------------------------------------------------
+
+.kt-article {
+  
+  h1, h2 {
+    margin-top: $M*1.5;
+  }
+  h1 {
+    font-size: $font-size-article-h1;
+  }
+  h2 {
+    font-size:     $font-size-article-h2;
+    margin-bottom: $M;
+  }
+  
+  .kt-article-big-image {
+    @include kt-fit-to-width; 
+    @include kt-bordered;
+  }
+  
+  .kt-article-info {
+    width:         100%;
+    padding-left:  0;
+    margin-bottom: 0;
+    font-size:     $font-size-article;
+    
+    li {
+      list-style:   none;
+      display:      inline-block;
+      margin-right: $M;
+      
+      &:nth-child(1) {
+        margin-left: 0;
+      }
+    }
+  }
+  
+  p {
+    line-height: 1.5;
+  }
+  
+  blockquote {
+    font-size:   $font-size-blockquote-1x;
+    font-weight: bold;
+    font-style:  italic;
+    margin:      $M*2;
+    padding:     $M*0.75 $M*1.5;
+    
+    footer {
+      text-align: right;
+      font-weight: bold;
+      
+      cite {
+        font-weight: normal;
+      }
+    }
+  }
+  
+  .kt-col-blockquote blockquote {
+    font-size:    $font-size-blockquote-1x*2;
+    margin:       0;
+    padding:      $M*0.75;
+    padding-left: $M*1.5;
+  }
+  
+  .kt-comments-header {
+    @extend .text-center;
+    margin-top: $M*2;
+  }
+  
+  .kt-comment {
+    @extend .kt-box;
+    margin-bottom: $M/4;
+    
+    .kt-comment-col-avatar {
+      @extend .col-xs-2;
+      @extend .col-sm-1;
+      
+      padding-right: $M/4;
+      
+      img {
+        @include kt-fit-to-width;
+      }
+    }
+    
+    .kt-comment-col-right {
+      @extend .col-xs-10;
+      @extend .col-sm-11;
+      
+      .kt-comment-data {
+        @extend .row;
+        margin-bottom: $M/4;
+        
+        .kt-comment-nick {
+          @extend .col-md-8;
+          @include kt-col-v-center;
+        }
+        
+        .kt-comment-time {
+          @extend .col-md-4;
+          @extend .text-right;
+          @include kt-col-v-center;
+          padding-right: $M;
+        }
+      }
+    }
+  }
+  
+  .kt-comment-odd {
+    @include kt-bg-gray;
+    @extend .kt-comment;
+  }
+  
+  .kt-comment-even {
+    @include kt-bg-pale-gray;
+    @extend .kt-comment;
+  }
+  
+  .kt-comments-nav {
+    @extend .kt-box;
+    
+    .kt-comments-nav-link {
+      @include kt-col-v-center;
+      @extend .col-xs-6;
+    }
+    
+    .kt-comments-nav-buttons {
+      @include kt-col-v-center;
+      @extend .col-xs-6;
+      @extend .text-right;
+    }
+  }
+}
