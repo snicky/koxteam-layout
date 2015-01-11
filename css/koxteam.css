@@ -1118,10 +1118,10 @@ mark,
 .text-left {
   text-align: left; }
 
-.text-right, #kt-login-panel, .kt-article .kt-comment .kt-comment-col-right .kt-comment-data .kt-comment-time, .kt-article .kt-comment-odd .kt-comment-col-right .kt-comment-data .kt-comment-time, .kt-article .kt-comment-even .kt-comment-col-right .kt-comment-data .kt-comment-time, .kt-article .kt-comments-nav .kt-comments-nav-buttons {
+.text-right, #kt-login-panel, #kt-left-panel .kt-article .kt-comment .kt-comment-col-right .kt-comment-data .kt-comment-time, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right .kt-comment-data .kt-comment-time, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right .kt-comment-data .kt-comment-time, #kt-left-panel .kt-article .kt-comments-nav .kt-comments-nav-buttons {
   text-align: right; }
 
-.text-center, .kt-article .kt-comments-header {
+.text-center, #kt-left-panel .kt-article .kt-comments-header {
   text-align: center; }
 
 .text-justify {
@@ -1396,17 +1396,17 @@ pre code {
   margin-right: auto;
   margin-left: auto; }
 
-.row, .kt-article .kt-comment .kt-comment-col-right .kt-comment-data, .kt-article .kt-comment-odd .kt-comment-col-right .kt-comment-data, .kt-article .kt-comment-even .kt-comment-col-right .kt-comment-data {
+.row, #kt-left-panel .kt-article .kt-comment .kt-comment-col-right .kt-comment-data, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right .kt-comment-data, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right .kt-comment-data {
   margin-right: -15px;
   margin-left: -15px; }
 
-.col-xs-1, .col-sm-1, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-image, .kt-article .kt-comment .kt-comment-col-avatar, .kt-article .kt-comment-odd .kt-comment-col-avatar, .kt-article .kt-comment-even .kt-comment-col-avatar, .col-md-1, .col-lg-1, .col-xs-2, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-image, .kt-article .kt-comment .kt-comment-col-avatar, .kt-article .kt-comment-odd .kt-comment-col-avatar, .kt-article .kt-comment-even .kt-comment-col-avatar, .col-sm-2, .col-md-2, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-image, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .kt-rigth-panel .kt-table .kt-table-row-header .kt-table-col-left, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, #kt-logo-search #kt-col-logo, .kt-rigth-panel, .kt-article .kt-comment .kt-comment-col-right .kt-comment-data .kt-comment-time, .kt-article .kt-comment-odd .kt-comment-col-right .kt-comment-data .kt-comment-time, .kt-article .kt-comment-even .kt-comment-col-right .kt-comment-data .kt-comment-time, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, #kt-logo-search #kt-col-search-bar, .col-lg-5, .col-xs-6, .kt-article .kt-comments-nav .kt-comments-nav-link, .kt-article .kt-comments-nav .kt-comments-nav-buttons, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .kt-article .kt-comment .kt-comment-col-right .kt-comment-data .kt-comment-nick, .kt-article .kt-comment-odd .kt-comment-col-right .kt-comment-data .kt-comment-nick, .kt-article .kt-comment-even .kt-comment-col-right .kt-comment-data .kt-comment-nick, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .kt-rigth-panel .kt-table .kt-table-row-header .kt-table-col-right, .col-lg-9, .col-xs-10, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-article-info, .kt-article .kt-comment .kt-comment-col-right, .kt-article .kt-comment-odd .kt-comment-col-right, .kt-article .kt-comment-even .kt-comment-col-right, .col-sm-10, .col-md-10, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-article-info, .col-lg-10, .col-xs-11, .col-sm-11, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-article-info, .kt-article .kt-comment .kt-comment-col-right, .kt-article .kt-comment-odd .kt-comment-col-right, .kt-article .kt-comment-even .kt-comment-col-right, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, #kt-login-panel, .col-lg-12 {
+.col-xs-1, .col-sm-1, #kt-left-panel .kt-article .kt-comment .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-avatar, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-image, .col-md-1, .col-lg-1, .col-xs-2, #kt-left-panel .kt-article .kt-comment .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-avatar, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-image, .col-sm-2, .col-md-2, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-image, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .kt-rigth-panel .kt-table .kt-table-row-header .kt-table-col-left, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, #kt-logo-search #kt-col-logo, #kt-left-panel .kt-article .kt-comment .kt-comment-col-right .kt-comment-data .kt-comment-time, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right .kt-comment-data .kt-comment-time, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right .kt-comment-data .kt-comment-time, .kt-rigth-panel, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, #kt-logo-search #kt-col-search-bar, .col-lg-5, .col-xs-6, #kt-left-panel .kt-article .kt-comments-nav .kt-comments-nav-link, #kt-left-panel .kt-article .kt-comments-nav .kt-comments-nav-buttons, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, #kt-left-panel, #kt-left-panel .kt-article .kt-comment .kt-comment-col-right .kt-comment-data .kt-comment-nick, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right .kt-comment-data .kt-comment-nick, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right .kt-comment-data .kt-comment-nick, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .kt-rigth-panel .kt-table .kt-table-row-header .kt-table-col-right, .col-lg-9, .col-xs-10, #kt-left-panel .kt-article .kt-comment .kt-comment-col-right, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-article-info, .col-sm-10, .col-md-10, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-article-info, .col-lg-10, .col-xs-11, .col-sm-11, #kt-left-panel .kt-article .kt-comment .kt-comment-col-right, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-article-info, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, #kt-login-panel, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px; }
 
-.col-xs-1, .col-xs-2, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-image, .kt-article .kt-comment .kt-comment-col-avatar, .kt-article .kt-comment-odd .kt-comment-col-avatar, .kt-article .kt-comment-even .kt-comment-col-avatar, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .kt-article .kt-comments-nav .kt-comments-nav-link, .kt-article .kt-comments-nav .kt-comments-nav-buttons, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-article-info, .kt-article .kt-comment .kt-comment-col-right, .kt-article .kt-comment-odd .kt-comment-col-right, .kt-article .kt-comment-even .kt-comment-col-right, .col-xs-11, .col-xs-12 {
+.col-xs-1, .col-xs-2, #kt-left-panel .kt-article .kt-comment .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-avatar, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-image, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, #kt-left-panel .kt-article .kt-comments-nav .kt-comments-nav-link, #kt-left-panel .kt-article .kt-comments-nav .kt-comments-nav-buttons, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, #kt-left-panel .kt-article .kt-comment .kt-comment-col-right, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-article-info, .col-xs-11, .col-xs-12 {
   float: left; }
 
 .col-xs-12 {
@@ -1415,7 +1415,7 @@ pre code {
 .col-xs-11 {
   width: 91.66666667%; }
 
-.col-xs-10, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-article-info, .kt-article .kt-comment .kt-comment-col-right, .kt-article .kt-comment-odd .kt-comment-col-right, .kt-article .kt-comment-even .kt-comment-col-right {
+.col-xs-10, #kt-left-panel .kt-article .kt-comment .kt-comment-col-right, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-article-info {
   width: 83.33333333%; }
 
 .col-xs-9 {
@@ -1427,7 +1427,7 @@ pre code {
 .col-xs-7 {
   width: 58.33333333%; }
 
-.col-xs-6, .kt-article .kt-comments-nav .kt-comments-nav-link, .kt-article .kt-comments-nav .kt-comments-nav-buttons {
+.col-xs-6, #kt-left-panel .kt-article .kt-comments-nav .kt-comments-nav-link, #kt-left-panel .kt-article .kt-comments-nav .kt-comments-nav-buttons {
   width: 50%; }
 
 .col-xs-5 {
@@ -1439,7 +1439,7 @@ pre code {
 .col-xs-3 {
   width: 25%; }
 
-.col-xs-2, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-image, .kt-article .kt-comment .kt-comment-col-avatar, .kt-article .kt-comment-odd .kt-comment-col-avatar, .kt-article .kt-comment-even .kt-comment-col-avatar {
+.col-xs-2, #kt-left-panel .kt-article .kt-comment .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-avatar, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-image {
   width: 16.66666667%; }
 
 .col-xs-1 {
@@ -1563,13 +1563,13 @@ pre code {
   margin-left: 0; }
 
 @media (min-width: 768px) {
-  .col-sm-1, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-image, .kt-article .kt-comment .kt-comment-col-avatar, .kt-article .kt-comment-odd .kt-comment-col-avatar, .kt-article .kt-comment-even .kt-comment-col-avatar, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-article-info, .kt-article .kt-comment .kt-comment-col-right, .kt-article .kt-comment-odd .kt-comment-col-right, .kt-article .kt-comment-even .kt-comment-col-right, .col-sm-12 {
+  .col-sm-1, #kt-left-panel .kt-article .kt-comment .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-avatar, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-image, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, #kt-left-panel .kt-article .kt-comment .kt-comment-col-right, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-article-info, .col-sm-12 {
     float: left; }
 
   .col-sm-12 {
     width: 100%; }
 
-  .col-sm-11, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-article-info, .kt-article .kt-comment .kt-comment-col-right, .kt-article .kt-comment-odd .kt-comment-col-right, .kt-article .kt-comment-even .kt-comment-col-right {
+  .col-sm-11, #kt-left-panel .kt-article .kt-comment .kt-comment-col-right, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-article-info {
     width: 91.66666667%; }
 
   .col-sm-10 {
@@ -1599,7 +1599,7 @@ pre code {
   .col-sm-2 {
     width: 16.66666667%; }
 
-  .col-sm-1, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-image, .kt-article .kt-comment .kt-comment-col-avatar, .kt-article .kt-comment-odd .kt-comment-col-avatar, .kt-article .kt-comment-even .kt-comment-col-avatar {
+  .col-sm-1, #kt-left-panel .kt-article .kt-comment .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-avatar, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-image {
     width: 8.33333333%; }
 
   .col-sm-pull-12 {
@@ -1719,7 +1719,7 @@ pre code {
   .col-sm-offset-0 {
     margin-left: 0; } }
 @media (min-width: 992px) {
-  .col-md-1, .col-md-2, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-image, .col-md-3, .kt-rigth-panel .kt-table .kt-table-row-header .kt-table-col-left, .col-md-4, #kt-logo-search #kt-col-logo, .kt-rigth-panel, .kt-article .kt-comment .kt-comment-col-right .kt-comment-data .kt-comment-time, .kt-article .kt-comment-odd .kt-comment-col-right .kt-comment-data .kt-comment-time, .kt-article .kt-comment-even .kt-comment-col-right .kt-comment-data .kt-comment-time, .col-md-5, #kt-logo-search #kt-col-search-bar, .col-md-6, .col-md-7, .col-md-8, .kt-article .kt-comment .kt-comment-col-right .kt-comment-data .kt-comment-nick, .kt-article .kt-comment-odd .kt-comment-col-right .kt-comment-data .kt-comment-nick, .kt-article .kt-comment-even .kt-comment-col-right .kt-comment-data .kt-comment-nick, .col-md-9, .kt-rigth-panel .kt-table .kt-table-row-header .kt-table-col-right, .col-md-10, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-article-info, .col-md-11, .col-md-12, #kt-login-panel {
+  .col-md-1, .col-md-2, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-image, .col-md-3, .kt-rigth-panel .kt-table .kt-table-row-header .kt-table-col-left, .col-md-4, #kt-logo-search #kt-col-logo, #kt-left-panel .kt-article .kt-comment .kt-comment-col-right .kt-comment-data .kt-comment-time, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right .kt-comment-data .kt-comment-time, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right .kt-comment-data .kt-comment-time, .kt-rigth-panel, .col-md-5, #kt-logo-search #kt-col-search-bar, .col-md-6, .col-md-7, .col-md-8, #kt-left-panel, #kt-left-panel .kt-article .kt-comment .kt-comment-col-right .kt-comment-data .kt-comment-nick, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right .kt-comment-data .kt-comment-nick, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right .kt-comment-data .kt-comment-nick, .col-md-9, .kt-rigth-panel .kt-table .kt-table-row-header .kt-table-col-right, .col-md-10, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-article-info, .col-md-11, .col-md-12, #kt-login-panel {
     float: left; }
 
   .col-md-12, #kt-login-panel {
@@ -1734,7 +1734,7 @@ pre code {
   .col-md-9, .kt-rigth-panel .kt-table .kt-table-row-header .kt-table-col-right {
     width: 75%; }
 
-  .col-md-8, .kt-article .kt-comment .kt-comment-col-right .kt-comment-data .kt-comment-nick, .kt-article .kt-comment-odd .kt-comment-col-right .kt-comment-data .kt-comment-nick, .kt-article .kt-comment-even .kt-comment-col-right .kt-comment-data .kt-comment-nick {
+  .col-md-8, #kt-left-panel, #kt-left-panel .kt-article .kt-comment .kt-comment-col-right .kt-comment-data .kt-comment-nick, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right .kt-comment-data .kt-comment-nick, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right .kt-comment-data .kt-comment-nick {
     width: 66.66666667%; }
 
   .col-md-7 {
@@ -1746,7 +1746,7 @@ pre code {
   .col-md-5, #kt-logo-search #kt-col-search-bar {
     width: 41.66666667%; }
 
-  .col-md-4, #kt-logo-search #kt-col-logo, .kt-rigth-panel, .kt-article .kt-comment .kt-comment-col-right .kt-comment-data .kt-comment-time, .kt-article .kt-comment-odd .kt-comment-col-right .kt-comment-data .kt-comment-time, .kt-article .kt-comment-even .kt-comment-col-right .kt-comment-data .kt-comment-time {
+  .col-md-4, #kt-logo-search #kt-col-logo, #kt-left-panel .kt-article .kt-comment .kt-comment-col-right .kt-comment-data .kt-comment-time, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right .kt-comment-data .kt-comment-time, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right .kt-comment-data .kt-comment-time, .kt-rigth-panel {
     width: 33.33333333%; }
 
   .col-md-3, .kt-rigth-panel .kt-table .kt-table-row-header .kt-table-col-left {
@@ -5942,13 +5942,13 @@ button.close {
 .container-fluid:before,
 .container-fluid:after,
 .row:before,
-.kt-article .kt-comment .kt-comment-col-right .kt-comment-data:before,
-.kt-article .kt-comment-odd .kt-comment-col-right .kt-comment-data:before,
-.kt-article .kt-comment-even .kt-comment-col-right .kt-comment-data:before,
+#kt-left-panel .kt-article .kt-comment .kt-comment-col-right .kt-comment-data:before,
+#kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right .kt-comment-data:before,
+#kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right .kt-comment-data:before,
 .row:after,
-.kt-article .kt-comment .kt-comment-col-right .kt-comment-data:after,
-.kt-article .kt-comment-odd .kt-comment-col-right .kt-comment-data:after,
-.kt-article .kt-comment-even .kt-comment-col-right .kt-comment-data:after,
+#kt-left-panel .kt-article .kt-comment .kt-comment-col-right .kt-comment-data:after,
+#kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right .kt-comment-data:after,
+#kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right .kt-comment-data:after,
 .form-horizontal .form-group:before,
 .form-horizontal .form-group:after,
 .btn-toolbar:before,
@@ -5977,9 +5977,9 @@ button.close {
 .container:after,
 .container-fluid:after,
 .row:after,
-.kt-article .kt-comment .kt-comment-col-right .kt-comment-data:after,
-.kt-article .kt-comment-odd .kt-comment-col-right .kt-comment-data:after,
-.kt-article .kt-comment-even .kt-comment-col-right .kt-comment-data:after,
+#kt-left-panel .kt-article .kt-comment .kt-comment-col-right .kt-comment-data:after,
+#kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right .kt-comment-data:after,
+#kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right .kt-comment-data:after,
 .form-horizontal .form-group:after,
 .btn-toolbar:after,
 .btn-group-vertical > .btn-group:after,
@@ -6201,7 +6201,7 @@ a {
     background-color: #111;
     color: #fcfcfc; }
 
-.kt-box, .kt-social, .kt-article .kt-comment, .kt-article .kt-comment-odd, .kt-article .kt-comment-even, .kt-article .kt-comments-nav {
+.kt-box, .kt-social, #kt-left-panel .kt-article .kt-comment, #kt-left-panel .kt-article .kt-comment-odd, #kt-left-panel .kt-article .kt-comment-even, #kt-left-panel .kt-article .kt-comments-nav {
   border: 1px solid #ccc;
   margin-bottom: 20px;
   padding: 10px; }
@@ -6293,6 +6293,77 @@ a {
     #kt-white-sheet {
       width: auto; } }
 
+#kt-left-panel .kt-article h1, #kt-left-panel .kt-article h2 {
+  margin-top: 30px; }
+#kt-left-panel .kt-article h1 {
+  font-size: 22px; }
+#kt-left-panel .kt-article h2 {
+  font-size: 20px;
+  margin-bottom: 20px; }
+#kt-left-panel .kt-article .kt-article-big-image {
+  max-width: 100%;
+  border: 1px solid #ccc; }
+#kt-left-panel .kt-article .kt-article-info {
+  width: 100%;
+  padding-left: 0;
+  margin-bottom: 0;
+  font-size: 12px; }
+  #kt-left-panel .kt-article .kt-article-info li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px; }
+    #kt-left-panel .kt-article .kt-article-info li:nth-child(1) {
+      margin-left: 0; }
+#kt-left-panel .kt-article p {
+  line-height: 1.5; }
+#kt-left-panel .kt-article blockquote {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  margin: 40px;
+  padding: 15px 30px; }
+  #kt-left-panel .kt-article blockquote footer {
+    text-align: right;
+    font-weight: bold; }
+    #kt-left-panel .kt-article blockquote footer cite {
+      font-weight: normal; }
+#kt-left-panel .kt-article .kt-col-blockquote blockquote {
+  font-size: 28px;
+  margin: 0;
+  padding: 15px;
+  padding-left: 30px; }
+#kt-left-panel .kt-article .kt-comments-header {
+  margin-top: 40px; }
+#kt-left-panel .kt-article .kt-comment, #kt-left-panel .kt-article .kt-comment-odd, #kt-left-panel .kt-article .kt-comment-even {
+  margin-bottom: 5px; }
+  #kt-left-panel .kt-article .kt-comment .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-avatar {
+    padding-right: 5px; }
+    #kt-left-panel .kt-article .kt-comment .kt-comment-col-avatar img, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-avatar img, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-avatar img {
+      max-width: 100%; }
+  #kt-left-panel .kt-article .kt-comment .kt-comment-col-right .kt-comment-data, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right .kt-comment-data, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right .kt-comment-data {
+    margin-bottom: 5px; }
+    #kt-left-panel .kt-article .kt-comment .kt-comment-col-right .kt-comment-data .kt-comment-nick, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right .kt-comment-data .kt-comment-nick, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right .kt-comment-data .kt-comment-nick {
+      float: none;
+      display: inline-block;
+      vertical-align: middle; }
+    #kt-left-panel .kt-article .kt-comment .kt-comment-col-right .kt-comment-data .kt-comment-time, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right .kt-comment-data .kt-comment-time, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right .kt-comment-data .kt-comment-time {
+      float: none;
+      display: inline-block;
+      vertical-align: middle;
+      padding-right: 20px; }
+#kt-left-panel .kt-article .kt-comment-odd {
+  background-color: #f0f0f0; }
+#kt-left-panel .kt-article .kt-comment-even {
+  background-color: #f9f9f9; }
+#kt-left-panel .kt-article .kt-comments-nav .kt-comments-nav-link {
+  float: none;
+  display: inline-block;
+  vertical-align: middle; }
+#kt-left-panel .kt-article .kt-comments-nav .kt-comments-nav-buttons {
+  float: none;
+  display: inline-block;
+  vertical-align: middle; }
+
 .kt-rigth-panel {
   margin-left: 15px;
   margin-right: -15px; }
@@ -6345,76 +6416,5 @@ a {
       border: 1px solid #ccc;
       border-top: 0;
       background-color: #f9f9f9; }
-
-.kt-article h1, .kt-article h2 {
-  margin-top: 30px; }
-.kt-article h1 {
-  font-size: 22px; }
-.kt-article h2 {
-  font-size: 20px;
-  margin-bottom: 20px; }
-.kt-article .kt-article-big-image {
-  max-width: 100%;
-  border: 1px solid #ccc; }
-.kt-article .kt-article-info {
-  width: 100%;
-  padding-left: 0;
-  margin-bottom: 0;
-  font-size: 12px; }
-  .kt-article .kt-article-info li {
-    list-style: none;
-    display: inline-block;
-    margin-right: 20px; }
-    .kt-article .kt-article-info li:nth-child(1) {
-      margin-left: 0; }
-.kt-article p {
-  line-height: 1.5; }
-.kt-article blockquote {
-  font-size: 14px;
-  font-weight: bold;
-  font-style: italic;
-  margin: 40px;
-  padding: 15px 30px; }
-  .kt-article blockquote footer {
-    text-align: right;
-    font-weight: bold; }
-    .kt-article blockquote footer cite {
-      font-weight: normal; }
-.kt-article .kt-col-blockquote blockquote {
-  font-size: 28px;
-  margin: 0;
-  padding: 15px;
-  padding-left: 30px; }
-.kt-article .kt-comments-header {
-  margin-top: 40px; }
-.kt-article .kt-comment, .kt-article .kt-comment-odd, .kt-article .kt-comment-even {
-  margin-bottom: 5px; }
-  .kt-article .kt-comment .kt-comment-col-avatar, .kt-article .kt-comment-odd .kt-comment-col-avatar, .kt-article .kt-comment-even .kt-comment-col-avatar {
-    padding-right: 5px; }
-    .kt-article .kt-comment .kt-comment-col-avatar img, .kt-article .kt-comment-odd .kt-comment-col-avatar img, .kt-article .kt-comment-even .kt-comment-col-avatar img {
-      max-width: 100%; }
-  .kt-article .kt-comment .kt-comment-col-right .kt-comment-data, .kt-article .kt-comment-odd .kt-comment-col-right .kt-comment-data, .kt-article .kt-comment-even .kt-comment-col-right .kt-comment-data {
-    margin-bottom: 5px; }
-    .kt-article .kt-comment .kt-comment-col-right .kt-comment-data .kt-comment-nick, .kt-article .kt-comment-odd .kt-comment-col-right .kt-comment-data .kt-comment-nick, .kt-article .kt-comment-even .kt-comment-col-right .kt-comment-data .kt-comment-nick {
-      float: none;
-      display: inline-block;
-      vertical-align: middle; }
-    .kt-article .kt-comment .kt-comment-col-right .kt-comment-data .kt-comment-time, .kt-article .kt-comment-odd .kt-comment-col-right .kt-comment-data .kt-comment-time, .kt-article .kt-comment-even .kt-comment-col-right .kt-comment-data .kt-comment-time {
-      float: none;
-      display: inline-block;
-      vertical-align: middle;
-      padding-right: 20px; }
-.kt-article .kt-comment-odd {
-  background-color: #f0f0f0; }
-.kt-article .kt-comment-even {
-  background-color: #f9f9f9; }
-.kt-article .kt-comments-nav .kt-comments-nav-link {
-  float: none;
-  display: inline-block;
-  vertical-align: middle; }
-.kt-article .kt-comments-nav .kt-comments-nav-buttons {
-  float: none;
-  display: inline-block;
-  vertical-align: middle; }
 
 /*# sourceMappingURL=koxteam.css.map */

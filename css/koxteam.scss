@@ -269,6 +269,146 @@ a {
 }
 
 // --------------------------------------------------------------------------
+// ---- KT ARTICLE ----------------------------------------------------------
+// --------------------------------------------------------------------------
+
+#kt-left-panel {
+  @extend .col-md-8;
+  
+  .kt-article {
+    
+    h1, h2 {
+      margin-top: $M*1.5;
+    }
+    h1 {
+      font-size: $font-size-article-h1;
+    }
+    h2 {
+      font-size:     $font-size-article-h2;
+      margin-bottom: $M;
+    }
+    
+    .kt-article-big-image {
+      @include kt-fit-to-width; 
+      @include kt-bordered;
+    }
+    
+    .kt-article-info {
+      width:         100%;
+      padding-left:  0;
+      margin-bottom: 0;
+      font-size:     $font-size-article;
+      
+      li {
+        list-style:   none;
+        display:      inline-block;
+        margin-right: $M;
+        
+        &:nth-child(1) {
+          margin-left: 0;
+        }
+      }
+    }
+    
+    p {
+      line-height: 1.5;
+    }
+    
+    blockquote {
+      font-size:   $font-size-blockquote-1x;
+      font-weight: bold;
+      font-style:  italic;
+      margin:      $M*2;
+      padding:     $M*0.75 $M*1.5;
+      
+      footer {
+        text-align: right;
+        font-weight: bold;
+        
+        cite {
+          font-weight: normal;
+        }
+      }
+    }
+    
+    .kt-col-blockquote blockquote {
+      font-size:    $font-size-blockquote-1x*2;
+      margin:       0;
+      padding:      $M*0.75;
+      padding-left: $M*1.5;
+    }
+    
+    .kt-comments-header {
+      @extend .text-center;
+      margin-top: $M*2;
+    }
+    
+    .kt-comment {
+      @extend .kt-box;
+      margin-bottom: $M/4;
+      
+      .kt-comment-col-avatar {
+        @extend .col-xs-2;
+        @extend .col-sm-1;
+        
+        padding-right: $M/4;
+        
+        img {
+          @include kt-fit-to-width;
+        }
+      }
+      
+      .kt-comment-col-right {
+        @extend .col-xs-10;
+        @extend .col-sm-11;
+        
+        .kt-comment-data {
+          @extend .row;
+          margin-bottom: $M/4;
+          
+          .kt-comment-nick {
+            @extend .col-md-8;
+            @include kt-col-v-center;
+          }
+          
+          .kt-comment-time {
+            @extend .col-md-4;
+            @extend .text-right;
+            @include kt-col-v-center;
+            padding-right: $M;
+          }
+        }
+      }
+    }
+    
+    .kt-comment-odd {
+      @include kt-bg-gray;
+      @extend .kt-comment;
+    }
+    
+    .kt-comment-even {
+      @include kt-bg-pale-gray;
+      @extend .kt-comment;
+    }
+    
+    .kt-comments-nav {
+      @extend .kt-box;
+      
+      .kt-comments-nav-link {
+        @include kt-col-v-center;
+        @extend .col-xs-6;
+      }
+      
+      .kt-comments-nav-buttons {
+        @include kt-col-v-center;
+        @extend .col-xs-6;
+        @extend .text-right;
+      }
+    }
+  }
+}
+
+// --------------------------------------------------------------------------
 // ---- KT RIGHT PANEL ------------------------------------------------------
 // --------------------------------------------------------------------------
 
@@ -351,141 +491,5 @@ a {
       background-color: $color-bg-pale-gray;
     }
     
-  }
-}
-
-// --------------------------------------------------------------------------
-// ---- KT ARTICLE ----------------------------------------------------------
-// --------------------------------------------------------------------------
-
-.kt-article {
-  
-  h1, h2 {
-    margin-top: $M*1.5;
-  }
-  h1 {
-    font-size: $font-size-article-h1;
-  }
-  h2 {
-    font-size:     $font-size-article-h2;
-    margin-bottom: $M;
-  }
-  
-  .kt-article-big-image {
-    @include kt-fit-to-width; 
-    @include kt-bordered;
-  }
-  
-  .kt-article-info {
-    width:         100%;
-    padding-left:  0;
-    margin-bottom: 0;
-    font-size:     $font-size-article;
-    
-    li {
-      list-style:   none;
-      display:      inline-block;
-      margin-right: $M;
-      
-      &:nth-child(1) {
-        margin-left: 0;
-      }
-    }
-  }
-  
-  p {
-    line-height: 1.5;
-  }
-  
-  blockquote {
-    font-size:   $font-size-blockquote-1x;
-    font-weight: bold;
-    font-style:  italic;
-    margin:      $M*2;
-    padding:     $M*0.75 $M*1.5;
-    
-    footer {
-      text-align: right;
-      font-weight: bold;
-      
-      cite {
-        font-weight: normal;
-      }
-    }
-  }
-  
-  .kt-col-blockquote blockquote {
-    font-size:    $font-size-blockquote-1x*2;
-    margin:       0;
-    padding:      $M*0.75;
-    padding-left: $M*1.5;
-  }
-  
-  .kt-comments-header {
-    @extend .text-center;
-    margin-top: $M*2;
-  }
-  
-  .kt-comment {
-    @extend .kt-box;
-    margin-bottom: $M/4;
-    
-    .kt-comment-col-avatar {
-      @extend .col-xs-2;
-      @extend .col-sm-1;
-      
-      padding-right: $M/4;
-      
-      img {
-        @include kt-fit-to-width;
-      }
-    }
-    
-    .kt-comment-col-right {
-      @extend .col-xs-10;
-      @extend .col-sm-11;
-      
-      .kt-comment-data {
-        @extend .row;
-        margin-bottom: $M/4;
-        
-        .kt-comment-nick {
-          @extend .col-md-8;
-          @include kt-col-v-center;
-        }
-        
-        .kt-comment-time {
-          @extend .col-md-4;
-          @extend .text-right;
-          @include kt-col-v-center;
-          padding-right: $M;
-        }
-      }
-    }
-  }
-  
-  .kt-comment-odd {
-    @include kt-bg-gray;
-    @extend .kt-comment;
-  }
-  
-  .kt-comment-even {
-    @include kt-bg-pale-gray;
-    @extend .kt-comment;
-  }
-  
-  .kt-comments-nav {
-    @extend .kt-box;
-    
-    .kt-comments-nav-link {
-      @include kt-col-v-center;
-      @extend .col-xs-6;
-    }
-    
-    .kt-comments-nav-buttons {
-      @include kt-col-v-center;
-      @extend .col-xs-6;
-      @extend .text-right;
-    }
   }
 }
