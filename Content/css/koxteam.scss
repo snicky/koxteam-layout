@@ -26,6 +26,7 @@ $color-bg-pale-gray:     #f9f9f9;
 $color-bg-gray:          #f0f0f0;
 
 $color-maroon: #960628;
+$color-dark-maroon: #660000;
 
 // Borders
 $border-thickness: 1px;
@@ -121,7 +122,6 @@ a {
 
 #kt-body {
   @include kt-bg-pale-gray;
-  background-image:  url('../img/bg.png'); 
   background-repeat: repeat-x; 
   background-size:   20px 460px;
   padding-top:       $M/2;
@@ -177,12 +177,16 @@ a {
         background-color: black;
         color:            $color-medium-dark-gray;
         padding:          $M;
-        outline: none !important;
+        
+        &:focus {
+          box-shadow: none;
+        }
       }
       
       .input-group-btn {
-        border:  $border-dark-gray;
-        border-left: 0;
+        border:           $border-dark-gray;
+        border-left:      0;
+        background-color: black;
         
         .btn {
           background-color: black;
@@ -215,23 +219,17 @@ a {
     padding-right: 0;
   }
   
-  $border-navbar: 2px solid $color-almost-black;
-  
   .nav li {
-    border-left: $border-navbar;
-    box-shadow:  3px 0 1px #555;
+    border-right: 2px solid $color-almost-black;
+    box-shadow:   1px 0 1px #555;
     
     &:hover {
+      border-right:     2px solid $color-dark-maroon;
       background-color: $color-maroon;
     }
     
     &:first-child {
       border-left: 0;
-    }
-    
-    &:last-child {
-      border-right: $border-navbar;
-      box-shadow: 1px 0 1px #555;
     }
     
     a {
