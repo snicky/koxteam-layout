@@ -39,6 +39,7 @@ $color-bg-pale-gray:     #f7f7f7;
 
 $color-almost-white:     #fcfcfc;
 
+$color-light-maroon:     #cf0228;
 $color-maroon:           #a00019;
 $color-dark-maroon:      #660000;
 
@@ -50,6 +51,9 @@ $border-pale-gray: $border-thickness solid $color-gray-15;
 
 // Font sizes
 $font-size-article-header: 20px;
+
+// File paths
+$images-path: '../images/';
 
 
 // --------------------------------------------------------------------------
@@ -129,6 +133,7 @@ a {
 
 #kt-body {
   @include kt-bg-gray;
+  background-image:  url($images-path + 'kt_bg_top.jpg');
   background-repeat: repeat-x;
   background-size:   100% 530px;
   padding-top:       $M/2;
@@ -351,7 +356,7 @@ a {
   
   @media (max-width: $bs-screen-sm) {
     padding-top: $M;
-    margin-top: $M;
+    margin-top:  $M*1.5;
   }
 }
 
@@ -539,6 +544,20 @@ a {
     margin-right: -$bs-margin;
   }
   
+  #kt-social-buttons {
+    margin-bottom: $M;
+    
+    div {
+      @extend .col-md-4;
+      @extend .col-xs-2;
+      
+      img {
+        width: 100%;
+      }
+    }
+    
+  }
+  
   .kt-table {
     width:         100%;
     border-top:    $border-gray;
@@ -549,8 +568,9 @@ a {
     }
     
     .kt-table-row-header {
-      h3 { margin: 0 !important; font-family: 'Open Sans Condensed'; }
-      h4 { margin: 0 !important; font-family: 'Open Sans Condensed'; }
+      h1, h2, h3, h4, h5 {
+        margin: 0 !important; font-family: 'Open Sans Condensed';
+      }
       
       .kt-table-col-left {
         @extend .col-lg-3;
@@ -583,6 +603,7 @@ a {
       
       .kt-table-col-image {
         @extend .col-xs-2;
+        @extend .col-sm-1;
         @extend .col-md-2;
         @include kt-col-v-center;
         padding-right: $M/4;
@@ -595,6 +616,7 @@ a {
       
       .kt-table-col-article-info {
         @extend .col-xs-10;
+        @extend .col-sm-11;
         @extend .col-md-10;
         @include kt-col-v-center;
         line-height: 1.4;
@@ -620,5 +642,101 @@ a {
       background-color: $color-bg-pale-gray;
     }
     
+  }
+  
+  .kt-table-black, .kt-table-maroon {
+    .kt-table-row-header {
+      border: 0;
+      
+      .kt-table-col-right {
+        color: $color-gray-15;
+      }
+    }
+  }
+  
+  .kt-table-black {
+    
+    .kt-table-row-header {
+      background-color: $color-blackish;
+      
+      .kt-table-col-left {
+        border-right: 1px solid #545454;
+        box-shadow:   1px 0 0 black;
+      }
+    }
+    
+  }
+  
+  .kt-table-maroon {
+    
+    .kt-table-row-header {
+      background-color: $color-maroon;
+      
+      .kt-table-col-left {
+        border-right: 1px solid $color-dark-maroon;
+        box-shadow:   1px 0 0 $color-light-maroon;
+      }
+    }
+    
+  }
+}
+
+// --------------------------------------------------------------------------
+// ---- KT FOOTER -----------------------------------------------------------
+// --------------------------------------------------------------------------
+
+#kt-footer {
+  width: 100%;
+  margin-top: $M*4;
+  color: $color-gray-14;
+  line-height: 1.66;
+  font-size: 13px;
+  
+  a {
+    color: $color-gray-14;
+    text-decoration: underline;
+  }
+  
+  #kt-footer-top {
+    background-color: black;
+    min-height: $M*3;
+    padding: $M;
+    
+    #kt-footer-logo {
+      @extend .col-md-2;
+      @include kt-col-v-center;
+    }
+    
+    #kt-footer-more {
+      @extend .col-md-10;
+      @include kt-col-v-center;
+    }
+  }
+  
+  #kt-footer-bottom {
+    background-color: $color-blackish;
+    border-top:       $border-dark-gray;
+    min-height:       $M*10;
+    padding-bottom:   $M;
+    
+    .kt-footer-bottom-col {
+      padding-top: $M*1.5;
+      
+      h6 {
+        font-size: 13px;
+        font-weight: bold;
+        margin: 0 0 20px;
+      }
+    }
+    
+    .kt-footer-bottom-map {
+      @extend .kt-footer-bottom-col;
+      @extend .col-md-2;
+    }
+    
+    .kt-footer-bottom-coop, .kt-footer-bottom-contact {
+      @extend .kt-footer-bottom-col;
+      @extend .col-md-5;
+    }
   }
 }

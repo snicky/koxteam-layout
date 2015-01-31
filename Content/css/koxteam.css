@@ -1574,13 +1574,13 @@ pre code {
   margin-right: -15px;
   margin-left: -15px; }
 
-.col-xs-1, .col-sm-1, #kt-left-panel .kt-article .kt-comment .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-avatar, .col-md-1, .col-lg-1, .col-xs-2, #kt-left-panel .kt-article .kt-comment .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-avatar, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-image, .col-sm-2, .col-md-2, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-image, .col-lg-2, .col-xs-3, #kt-logo-search #kt-col-logo, .col-sm-3, .col-md-3, .col-lg-3, .kt-rigth-panel .kt-table .kt-table-row-header .kt-table-col-left, .col-xs-4, .col-sm-4, .col-md-4, #kt-left-panel .kt-article .kt-comment .kt-comment-col-right .kt-comment-data .kt-comment-time, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right .kt-comment-data .kt-comment-time, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right .kt-comment-data .kt-comment-time, .kt-rigth-panel, .kt-rigth-panel .kt-table .kt-table-row-header .kt-table-col-left, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, #kt-logo-search #kt-col-search-bar, .col-lg-5, .col-xs-6, #kt-logo-search #kt-col-navbar-toggle, #kt-left-panel .kt-article .kt-comments-nav .kt-comments-nav-link, #kt-left-panel .kt-article .kt-comments-nav .kt-comments-nav-buttons, .col-sm-6, #kt-logo-search #kt-col-search-bar, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, #kt-left-panel, #kt-left-panel .kt-article .kt-comment .kt-comment-col-right .kt-comment-data .kt-comment-nick, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right .kt-comment-data .kt-comment-nick, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right .kt-comment-data .kt-comment-nick, .kt-rigth-panel .kt-table .kt-table-row-header .kt-table-col-right, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .kt-rigth-panel .kt-table .kt-table-row-header .kt-table-col-right, .col-xs-10, #kt-left-panel .kt-article .kt-comment .kt-comment-col-right, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-article-info, .col-sm-10, .col-md-10, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-article-info, .col-lg-10, .col-xs-11, .col-sm-11, #kt-left-panel .kt-article .kt-comment .kt-comment-col-right, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, #kt-login-panel, .col-lg-12 {
+.col-xs-1, .col-sm-1, #kt-left-panel .kt-article .kt-comment .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-avatar, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-image, .col-md-1, .col-lg-1, .col-xs-2, #kt-left-panel .kt-article .kt-comment .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-avatar, .kt-rigth-panel #kt-social-buttons div, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-image, .col-sm-2, .col-md-2, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-image, #kt-footer #kt-footer-top #kt-footer-logo, #kt-footer #kt-footer-bottom .kt-footer-bottom-map, .col-lg-2, .col-xs-3, #kt-logo-search #kt-col-logo, .col-sm-3, .col-md-3, .col-lg-3, .kt-rigth-panel .kt-table .kt-table-row-header .kt-table-col-left, .col-xs-4, .col-sm-4, .col-md-4, #kt-left-panel .kt-article .kt-comment .kt-comment-col-right .kt-comment-data .kt-comment-time, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right .kt-comment-data .kt-comment-time, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right .kt-comment-data .kt-comment-time, .kt-rigth-panel, .kt-rigth-panel #kt-social-buttons div, .kt-rigth-panel .kt-table .kt-table-row-header .kt-table-col-left, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, #kt-logo-search #kt-col-search-bar, #kt-footer #kt-footer-bottom .kt-footer-bottom-coop, #kt-footer #kt-footer-bottom .kt-footer-bottom-contact, .col-lg-5, .col-xs-6, #kt-logo-search #kt-col-navbar-toggle, #kt-left-panel .kt-article .kt-comments-nav .kt-comments-nav-link, #kt-left-panel .kt-article .kt-comments-nav .kt-comments-nav-buttons, .col-sm-6, #kt-logo-search #kt-col-search-bar, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, #kt-left-panel, #kt-left-panel .kt-article .kt-comment .kt-comment-col-right .kt-comment-data .kt-comment-nick, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right .kt-comment-data .kt-comment-nick, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right .kt-comment-data .kt-comment-nick, .kt-rigth-panel .kt-table .kt-table-row-header .kt-table-col-right, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .kt-rigth-panel .kt-table .kt-table-row-header .kt-table-col-right, .col-xs-10, #kt-left-panel .kt-article .kt-comment .kt-comment-col-right, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-article-info, .col-sm-10, .col-md-10, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-article-info, #kt-footer #kt-footer-top #kt-footer-more, .col-lg-10, .col-xs-11, .col-sm-11, #kt-left-panel .kt-article .kt-comment .kt-comment-col-right, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-article-info, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, #kt-login-panel, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px; }
 
-.col-xs-1, .col-xs-2, #kt-left-panel .kt-article .kt-comment .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-avatar, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-image, .col-xs-3, #kt-logo-search #kt-col-logo, .col-xs-4, .col-xs-5, .col-xs-6, #kt-logo-search #kt-col-navbar-toggle, #kt-left-panel .kt-article .kt-comments-nav .kt-comments-nav-link, #kt-left-panel .kt-article .kt-comments-nav .kt-comments-nav-buttons, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, #kt-left-panel .kt-article .kt-comment .kt-comment-col-right, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-article-info, .col-xs-11, .col-xs-12 {
+.col-xs-1, .col-xs-2, #kt-left-panel .kt-article .kt-comment .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-avatar, .kt-rigth-panel #kt-social-buttons div, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-image, .col-xs-3, #kt-logo-search #kt-col-logo, .col-xs-4, .col-xs-5, .col-xs-6, #kt-logo-search #kt-col-navbar-toggle, #kt-left-panel .kt-article .kt-comments-nav .kt-comments-nav-link, #kt-left-panel .kt-article .kt-comments-nav .kt-comments-nav-buttons, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, #kt-left-panel .kt-article .kt-comment .kt-comment-col-right, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-article-info, .col-xs-11, .col-xs-12 {
   float: left; }
 
 .col-xs-12 {
@@ -1613,7 +1613,7 @@ pre code {
 .col-xs-3, #kt-logo-search #kt-col-logo {
   width: 25%; }
 
-.col-xs-2, #kt-left-panel .kt-article .kt-comment .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-avatar, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-image {
+.col-xs-2, #kt-left-panel .kt-article .kt-comment .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-avatar, .kt-rigth-panel #kt-social-buttons div, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-image {
   width: 16.66666667%; }
 
 .col-xs-1 {
@@ -1737,13 +1737,13 @@ pre code {
   margin-left: 0; }
 
 @media (min-width: 768px) {
-  .col-sm-1, #kt-left-panel .kt-article .kt-comment .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-avatar, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, #kt-logo-search #kt-col-search-bar, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, #kt-left-panel .kt-article .kt-comment .kt-comment-col-right, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right, .col-sm-12 {
+  .col-sm-1, #kt-left-panel .kt-article .kt-comment .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-avatar, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-image, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, #kt-logo-search #kt-col-search-bar, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, #kt-left-panel .kt-article .kt-comment .kt-comment-col-right, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-article-info, .col-sm-12 {
     float: left; }
 
   .col-sm-12 {
     width: 100%; }
 
-  .col-sm-11, #kt-left-panel .kt-article .kt-comment .kt-comment-col-right, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right {
+  .col-sm-11, #kt-left-panel .kt-article .kt-comment .kt-comment-col-right, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-article-info {
     width: 91.66666667%; }
 
   .col-sm-10 {
@@ -1773,7 +1773,7 @@ pre code {
   .col-sm-2 {
     width: 16.66666667%; }
 
-  .col-sm-1, #kt-left-panel .kt-article .kt-comment .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-avatar {
+  .col-sm-1, #kt-left-panel .kt-article .kt-comment .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-avatar, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-image {
     width: 8.33333333%; }
 
   .col-sm-pull-12 {
@@ -1893,7 +1893,7 @@ pre code {
   .col-sm-offset-0 {
     margin-left: 0; } }
 @media (min-width: 992px) {
-  .col-md-1, .col-md-2, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-image, .col-md-3, .col-md-4, #kt-left-panel .kt-article .kt-comment .kt-comment-col-right .kt-comment-data .kt-comment-time, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right .kt-comment-data .kt-comment-time, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right .kt-comment-data .kt-comment-time, .kt-rigth-panel, .kt-rigth-panel .kt-table .kt-table-row-header .kt-table-col-left, .col-md-5, #kt-logo-search #kt-col-search-bar, .col-md-6, .col-md-7, .col-md-8, #kt-left-panel, #kt-left-panel .kt-article .kt-comment .kt-comment-col-right .kt-comment-data .kt-comment-nick, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right .kt-comment-data .kt-comment-nick, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right .kt-comment-data .kt-comment-nick, .kt-rigth-panel .kt-table .kt-table-row-header .kt-table-col-right, .col-md-9, .col-md-10, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-article-info, .col-md-11, .col-md-12, #kt-login-panel {
+  .col-md-1, .col-md-2, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-image, #kt-footer #kt-footer-top #kt-footer-logo, #kt-footer #kt-footer-bottom .kt-footer-bottom-map, .col-md-3, .col-md-4, #kt-left-panel .kt-article .kt-comment .kt-comment-col-right .kt-comment-data .kt-comment-time, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right .kt-comment-data .kt-comment-time, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right .kt-comment-data .kt-comment-time, .kt-rigth-panel, .kt-rigth-panel #kt-social-buttons div, .kt-rigth-panel .kt-table .kt-table-row-header .kt-table-col-left, .col-md-5, #kt-logo-search #kt-col-search-bar, #kt-footer #kt-footer-bottom .kt-footer-bottom-coop, #kt-footer #kt-footer-bottom .kt-footer-bottom-contact, .col-md-6, .col-md-7, .col-md-8, #kt-left-panel, #kt-left-panel .kt-article .kt-comment .kt-comment-col-right .kt-comment-data .kt-comment-nick, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right .kt-comment-data .kt-comment-nick, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right .kt-comment-data .kt-comment-nick, .kt-rigth-panel .kt-table .kt-table-row-header .kt-table-col-right, .col-md-9, .col-md-10, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-article-info, #kt-footer #kt-footer-top #kt-footer-more, .col-md-11, .col-md-12, #kt-login-panel {
     float: left; }
 
   .col-md-12, #kt-login-panel {
@@ -1902,7 +1902,7 @@ pre code {
   .col-md-11 {
     width: 91.66666667%; }
 
-  .col-md-10, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-article-info {
+  .col-md-10, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-article-info, #kt-footer #kt-footer-top #kt-footer-more {
     width: 83.33333333%; }
 
   .col-md-9 {
@@ -1917,16 +1917,16 @@ pre code {
   .col-md-6 {
     width: 50%; }
 
-  .col-md-5, #kt-logo-search #kt-col-search-bar {
+  .col-md-5, #kt-logo-search #kt-col-search-bar, #kt-footer #kt-footer-bottom .kt-footer-bottom-coop, #kt-footer #kt-footer-bottom .kt-footer-bottom-contact {
     width: 41.66666667%; }
 
-  .col-md-4, #kt-left-panel .kt-article .kt-comment .kt-comment-col-right .kt-comment-data .kt-comment-time, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right .kt-comment-data .kt-comment-time, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right .kt-comment-data .kt-comment-time, .kt-rigth-panel, .kt-rigth-panel .kt-table .kt-table-row-header .kt-table-col-left {
+  .col-md-4, #kt-left-panel .kt-article .kt-comment .kt-comment-col-right .kt-comment-data .kt-comment-time, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right .kt-comment-data .kt-comment-time, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right .kt-comment-data .kt-comment-time, .kt-rigth-panel, .kt-rigth-panel #kt-social-buttons div, .kt-rigth-panel .kt-table .kt-table-row-header .kt-table-col-left {
     width: 33.33333333%; }
 
   .col-md-3 {
     width: 25%; }
 
-  .col-md-2, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-image {
+  .col-md-2, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-image, #kt-footer #kt-footer-top #kt-footer-logo, #kt-footer #kt-footer-bottom .kt-footer-bottom-map {
     width: 16.66666667%; }
 
   .col-md-1 {
@@ -6445,6 +6445,7 @@ a {
 
 #kt-body {
   background-color: #f0f0f0;
+  background-image: url("../images/kt_bg_top.jpg");
   background-repeat: repeat-x;
   background-size: 100% 530px;
   padding-top: 10px; }
@@ -6582,7 +6583,7 @@ a {
   @media (max-width: 768px) {
     #kt-white-sheet {
       padding-top: 20px;
-      margin-top: 20px; } }
+      margin-top: 30px; } }
 
 #kt-left-panel .kt-article h1, #kt-left-panel .kt-article h2 {
   color: #272727;
@@ -6685,16 +6686,17 @@ a {
     .kt-rigth-panel {
       margin-left: -15px;
       margin-right: -15px; } }
+  .kt-rigth-panel #kt-social-buttons {
+    margin-bottom: 20px; }
+    .kt-rigth-panel #kt-social-buttons div img {
+      width: 100%; }
   .kt-rigth-panel .kt-table {
     width: 100%;
     border-top: 1px solid #d8d8d8;
     margin-bottom: 20px; }
     .kt-rigth-panel .kt-table:last-child {
       margin-bottom: 40px; }
-    .kt-rigth-panel .kt-table .kt-table-row-header h3 {
-      margin: 0 !important;
-      font-family: 'Open Sans Condensed'; }
-    .kt-rigth-panel .kt-table .kt-table-row-header h4 {
+    .kt-rigth-panel .kt-table .kt-table-row-header h1, .kt-rigth-panel .kt-table .kt-table-row-header h2, .kt-rigth-panel .kt-table .kt-table-row-header h3, .kt-rigth-panel .kt-table .kt-table-row-header h4, .kt-rigth-panel .kt-table .kt-table-row-header h5 {
       margin: 0 !important;
       font-family: 'Open Sans Condensed'; }
     .kt-rigth-panel .kt-table .kt-table-row-header .kt-table-col-left {
@@ -6740,5 +6742,52 @@ a {
       border: 1px solid #d8d8d8;
       border-top: 0;
       background-color: #f7f7f7; }
+  .kt-rigth-panel .kt-table-black .kt-table-row-header, .kt-rigth-panel .kt-table-maroon .kt-table-row-header {
+    border: 0; }
+    .kt-rigth-panel .kt-table-black .kt-table-row-header .kt-table-col-right, .kt-rigth-panel .kt-table-maroon .kt-table-row-header .kt-table-col-right {
+      color: #eee; }
+  .kt-rigth-panel .kt-table-black .kt-table-row-header {
+    background-color: #272727; }
+    .kt-rigth-panel .kt-table-black .kt-table-row-header .kt-table-col-left {
+      border-right: 1px solid #545454;
+      box-shadow: 1px 0 0 black; }
+  .kt-rigth-panel .kt-table-maroon .kt-table-row-header {
+    background-color: #a00019; }
+    .kt-rigth-panel .kt-table-maroon .kt-table-row-header .kt-table-col-left {
+      border-right: 1px solid #660000;
+      box-shadow: 1px 0 0 #cf0228; }
+
+#kt-footer {
+  width: 100%;
+  margin-top: 80px;
+  color: #d8d8d8;
+  line-height: 1.66;
+  font-size: 13px; }
+  #kt-footer a {
+    color: #d8d8d8;
+    text-decoration: underline; }
+  #kt-footer #kt-footer-top {
+    background-color: black;
+    min-height: 60px;
+    padding: 20px; }
+    #kt-footer #kt-footer-top #kt-footer-logo {
+      float: none;
+      display: inline-block;
+      vertical-align: middle; }
+    #kt-footer #kt-footer-top #kt-footer-more {
+      float: none;
+      display: inline-block;
+      vertical-align: middle; }
+  #kt-footer #kt-footer-bottom {
+    background-color: #272727;
+    border-top: 1px solid #8d8d8d;
+    min-height: 200px;
+    padding-bottom: 20px; }
+    #kt-footer #kt-footer-bottom .kt-footer-bottom-col, #kt-footer #kt-footer-bottom .kt-footer-bottom-map, #kt-footer #kt-footer-bottom .kt-footer-bottom-coop, #kt-footer #kt-footer-bottom .kt-footer-bottom-contact {
+      padding-top: 30px; }
+      #kt-footer #kt-footer-bottom .kt-footer-bottom-col h6, #kt-footer #kt-footer-bottom .kt-footer-bottom-map h6, #kt-footer #kt-footer-bottom .kt-footer-bottom-coop h6, #kt-footer #kt-footer-bottom .kt-footer-bottom-contact h6 {
+        font-size: 13px;
+        font-weight: bold;
+        margin: 0 0 20px; }
 
 /*# sourceMappingURL=koxteam.css.map */
