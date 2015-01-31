@@ -729,12 +729,12 @@ a {
       }
     }
     
-    .kt-footer-bottom-map {
+    #kt-footer-bottom-map {
       @extend .kt-footer-bottom-col;
       @extend .col-md-2;
     }
     
-    .kt-footer-bottom-coop, .kt-footer-bottom-contact {
+    #kt-footer-bottom-coop, #kt-footer-bottom-contact {
       @extend .kt-footer-bottom-col;
       @extend .col-md-5;
     }
