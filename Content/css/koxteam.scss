@@ -16,30 +16,40 @@ $bs-margin: 15px;
 
 // Colors
 $color-almost-black:     #0d0d0d;
-$color-blackish:         #292929;
-$color-very-dark-gray:   #333;
-$color-dark-gray:        #888;
-$color-medium-dark-gray: #aaa;
-$color-gray:             #d8d8d8;
-$color-pale-gray:        #eee;
-$color-almost-white:     #fcfcfc;
+$color-blackish:         #272727;
 
-$color-bg-pale-gray:     #f7f7f7;
+$color-gray-1:           #333;
+$color-gray-2:           #3a3a3a;
+$color-gray-3:           #545454;
+$color-gray-4:           #5b5b5b;
+$color-gray-5:           #666;
+$color-gray-6:           #7a7a7a;
+$color-gray-7:           #737373;
+$color-gray-8:           #888;
+$color-gray-9:           #8d8d8d;
+$color-gray-10:          #9d9d9d;
+$color-gray-11:          #bdbdbd;
+$color-gray-12:          #c1c1c1;
+$color-gray-13:          #d1d1d1;
+$color-gray-14:          #d8d8d8;
+$color-gray-15:          #eee;
+
 $color-bg-gray:          #f0f0f0;
+$color-bg-pale-gray:     #f7f7f7;
+
+$color-almost-white:     #fcfcfc;
 
 $color-maroon:           #a00019;
 $color-dark-maroon:      #660000;
 
 // Borders
 $border-thickness: 1px;
-$border-dark-gray: $border-thickness solid $color-dark-gray;
-$border-gray:      $border-thickness solid $color-gray;
-$border-pale-gray: $border-thickness solid $color-pale-gray;
+$border-dark-gray: $border-thickness solid $color-gray-9;
+$border-gray:      $border-thickness solid $color-gray-14;
+$border-pale-gray: $border-thickness solid $color-gray-15;
 
 // Font sizes
-$font-size-article:        12px;
 $font-size-article-header: 20px;
-$font-size-blockquote-1x:  14px;
 
 
 // --------------------------------------------------------------------------
@@ -47,25 +57,15 @@ $font-size-blockquote-1x:  14px;
 // --------------------------------------------------------------------------
 
 a {
-  color: $color-very-dark-gray;
+  color: $color-gray-1;
   
   &:hover {
-    color: $color-very-dark-gray;
+    color: $color-gray-1;
   }
 }
 
 .btn {
   border-radius: 0;
-}
-
-.kt-btn-black {
-  background-color: $color-blackish;
-  color:            $color-almost-white;
-  
-  &:hover {
-    background-color: $color-almost-black;
-    color:            $color-almost-white;
-  }
 }
 
 // --------------------------------------------------------------------------
@@ -107,14 +107,20 @@ a {
 .kt-box {
   @include kt-bordered;
   margin-bottom: $M;
-  padding: $M/2;
+  padding:       $M/2;
 }
 .kt-social {
   @extend .kt-box;
   margin: $M 0;
 }
 .kt-btn-black {
-  // TODO
+  background-color: $color-blackish;
+  color:            $color-almost-white;
+  
+  &:hover {
+    background-color: $color-almost-black;
+    color:            $color-almost-white;
+  }
 }
 
 // --------------------------------------------------------------------------
@@ -122,9 +128,9 @@ a {
 // --------------------------------------------------------------------------
 
 #kt-body {
-  @include kt-bg-pale-gray;
-  background-repeat: repeat-x; 
-  background-size:   20px 460px;
+  @include kt-bg-gray;
+  background-repeat: repeat-x;
+  background-size:   100% 530px;
   padding-top:       $M/2;
 }
 
@@ -137,17 +143,17 @@ a {
   @extend .text-right;
   
   a {
-    color: #d1d1d1;
+    color: $color-gray-13;
     font:  14px bold 'Arial';
     
     span {
-      color:        #666;
+      color:        $color-gray-5;
       margin-right: $M/3;
     }
     
     &:hover {
-      color: #f1f1f1;
-      span { color: #888; }
+      color: $color-almost-white;
+      span { color: $color-gray-8; }
     }
   }
 }
@@ -186,7 +192,7 @@ a {
           border-right:     0;
           border-radius:    0;
           background-color: black;
-          color:            #737373;
+          color:            $color-gray-7;
           padding:          $M*1.2;
           font:             14px 'Arial';
           
@@ -217,19 +223,20 @@ a {
     }
   }
   
-  #kt-col-btn-collapse {
+  #kt-col-navbar-toggle {
     @extend .col-xs-6;
     @extend .col-xs-offset-3;
     @include kt-col-v-bottom;
     
-    #btn-collapse {
+    #kt-navbar-toggle {
       background-color: rgba(60,60,60,0.7);
-      border-color: #9d9d9d;
-      color: #666;
+      border-color:     $color-gray-10;
+      color:            $color-gray-5;
+      border-radius:    0;
       
       &:hover {
-        border-color: #c1c1c1;
-        color: #888;
+        border-color: $color-gray-12;
+        color:        $color-gray-9;
       }
       
       &.collapsed {
@@ -259,9 +266,9 @@ a {
   }
   
   @media (max-width: $bs-screen-sm) {
-    min-height: 0;
-    margin-left: -16px;
-    margin-right: -16px;
+    min-height:   0;
+    margin-left:  -$bs-margin;
+    margin-right: -$bs-margin;
   }
   
   .navbar-collapse {
@@ -271,7 +278,7 @@ a {
   
   .nav li {
     border-left:  1px solid black;
-    border-right: 1px solid #545454 ;
+    border-right: 1px solid $color-gray-3;
     
     &:hover {
       border-right: 1px solid $color-maroon;
@@ -329,15 +336,17 @@ a {
 #kt-white-sheet {
   @include kt-bordered-pale;
   
-  background-color: white; 
+  background-color: white;
+  box-shadow:       0px $M/1.25 $M*1.5 $color-gray-9;
   width:            1260px; 
   margin:           auto; 
   margin-top:       52px;
   font:             14px 'Arial';
-  color:            #3a3a3a;
+  color:            $color-gray-2;
   
   @media (max-width: 1260px) {
-    width: auto;
+    width:  auto;
+    border: 0;
   }
   
   @media (max-width: $bs-screen-sm) {
@@ -356,7 +365,7 @@ a {
   .kt-article {
     
     h1, h2 {
-      color:       #252525;
+      color:       $color-blackish;
       margin-top:  $M*1.5;
       font-weight: bold;
     }
@@ -378,7 +387,7 @@ a {
       padding-left:  0;
       margin-bottom: 0;
       font-size:     12px;
-      color:         #7a7a7a;
+      color:         $color-gray-6;
       
       li {
         list-style:   none;
@@ -416,7 +425,7 @@ a {
       footer {
         text-align: right;
         font-size:  13px;
-        color:      #bdbdbd;
+        color:      $color-gray-11;
         
         cite {
           font-weight: normal;
@@ -473,14 +482,14 @@ a {
             @include kt-col-v-center;
             padding-right: $M;
             font-size:     12px;
-            color:         #8d8d8d;
+            color:         $color-gray-9;
           }
         }
         
         p {
           font-size:   13px;
           line-height: 20px;
-          color:       #5b5b5b;
+          color:       $color-gray-4;
         }
       }
     }
@@ -540,19 +549,28 @@ a {
     }
     
     .kt-table-row-header {
-      padding: $M;
-      
       h3 { margin: 0 !important; font-family: 'Open Sans Condensed'; }
       h4 { margin: 0 !important; font-family: 'Open Sans Condensed'; }
       
       .kt-table-col-left {
-        @extend .col-md-3;
+        @extend .col-lg-3;
+        @extend .col-md-4;
+        @extend .text-center;
         @include kt-col-v-center;
+        padding: $M*1.5;
+        border-right: $border-gray;
+        
+        .kt-hc-icon-popularne {
+          margin-left: -12px;
+          margin-top:  -8px;
+        }
       }
       
       .kt-table-col-right {
-        @extend .col-md-9;
+        @extend .col-lg-9;
+        @extend .col-md-8;
         @include kt-col-v-center;
+        padding-left: $M*1.5;
       }
       
       .glyphicon {
@@ -565,7 +583,6 @@ a {
       
       .kt-table-col-image {
         @extend .col-xs-2;
-        @extend .col-sm-1;
         @extend .col-md-2;
         @include kt-col-v-center;
         padding-right: $M/4;
@@ -578,7 +595,6 @@ a {
       
       .kt-table-col-article-info {
         @extend .col-xs-10;
-        @extend .col-sm-11;
         @extend .col-md-10;
         @include kt-col-v-center;
         line-height: 1.4;
@@ -589,10 +605,10 @@ a {
         }
         .kt-table-article-timestamp {
           font-size: 12px;
-          color:     #676767;
+          color:     $color-gray-5;
         }
         .kt-table-article-author {
-          color: #676767;
+          color: $color-gray-5;
         }
       }
       
