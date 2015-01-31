@@ -5,6 +5,8 @@
 // --------------------------------------------------------------------------
 
 // Bootstrap screen widths
+$bs-screen-xs: 480px;
+$bs-screen-sm: 768px;
 $bs-screen-md: 992px;
 $bs-screen-lg: 1200px;
 
@@ -13,19 +15,19 @@ $M: 20px;
 $bs-margin: 15px;
 
 // Colors
-$color-almost-black:     #111;
-$color-blackish:         #2b2b2b;
+$color-almost-black:     #0d0d0d;
+$color-blackish:         #292929;
 $color-very-dark-gray:   #333;
 $color-dark-gray:        #888;
 $color-medium-dark-gray: #aaa;
-$color-gray:             #ccc;
+$color-gray:             #d8d8d8;
 $color-pale-gray:        #eee;
 $color-almost-white:     #fcfcfc;
 
-$color-bg-pale-gray:     #f9f9f9;
+$color-bg-pale-gray:     #f7f7f7;
 $color-bg-gray:          #f0f0f0;
 
-$color-maroon:           #960628;
+$color-maroon:           #a00019;
 $color-dark-maroon:      #660000;
 
 // Borders
@@ -35,10 +37,9 @@ $border-gray:      $border-thickness solid $color-gray;
 $border-pale-gray: $border-thickness solid $color-pale-gray;
 
 // Font sizes
-$font-size-article:       12px;
-$font-size-article-h1:    22px;
-$font-size-article-h2:    20px;
-$font-size-blockquote-1x: 14px;
+$font-size-article:        12px;
+$font-size-article-header: 20px;
+$font-size-blockquote-1x:  14px;
 
 
 // --------------------------------------------------------------------------
@@ -136,7 +137,8 @@ a {
   @extend .text-right;
   
   a {
-    color: $color-medium-dark-gray;
+    color: #d1d1d1;
+    font:  14px bold 'Arial';
     
     span {
       color:        #666;
@@ -144,8 +146,8 @@ a {
     }
     
     &:hover {
-      color: $color-pale-gray;
-      span { color: $color-medium-dark-gray; }
+      color: #f1f1f1;
+      span { color: #888; }
     }
   }
 }
@@ -158,44 +160,80 @@ a {
   margin-top: $M/2;
   
   #kt-col-logo {
-    @extend .col-md-4;
+    @extend .col-xs-3;
     @include kt-col-v-center;
   }
   
   #kt-col-search-bar {
     @extend .col-md-5;
-    @extend .col-md-offset-3;
-    @include kt-col-v-bottom;
+    @extend .col-md-offset-4;
+    @extend .col-sm-6;
+    @extend .col-sm-offset-3;
+    @include kt-col-v-center;
     
-    .form-group {
-      margin: 0;
+    @media (max-width: $bs-screen-sm) {
+      display: none;
+    }
+    
+    form {
+      margin-bottom: 0;   // Form has a 1em margin-bottom by default.
       
-      .form-control {
-        border:           $border-dark-gray;
-        border-right:     0;
-        border-radius:    0;
-        background-color: black;
-        color:            $color-medium-dark-gray;
-        padding:          $M;
+      .form-group {
+        margin: 0;
         
-        &:focus {
-          box-shadow: none;
-        }
-      }
-      
-      .input-group-btn {
-        border:           $border-dark-gray;
-        border-left:      0;
-        background-color: black;
-        
-        .btn {
+        .form-control {
+          border:           $border-dark-gray;
+          border-right:     0;
+          border-radius:    0;
           background-color: black;
-          outline:          none;
+          color:            #737373;
+          padding:          $M*1.2;
+          font:             14px 'Arial';
           
-          span {
-            color: $color-maroon;
+          &:focus {
+            box-shadow: none;
+          }
+          
+          @media (max-width: $bs-screen-md) {
+            padding: $M;
           }
         }
+        
+        .input-group-btn {
+          border:           $border-dark-gray;
+          border-left:      0;
+          background-color: black;
+          
+          .btn {
+            background-color: black;
+            outline:          none;
+            
+            span {
+              color: $color-maroon;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  #kt-col-btn-collapse {
+    @extend .col-xs-6;
+    @extend .col-xs-offset-3;
+    @include kt-col-v-bottom;
+    
+    #btn-collapse {
+      background-color: rgba(60,60,60,0.7);
+      border-color: #9d9d9d;
+      color: #666;
+      
+      &:hover {
+        border-color: #c1c1c1;
+        color: #888;
+      }
+      
+      &.collapsed {
+        background: none;
       }
     }
   }
@@ -209,9 +247,21 @@ a {
   border-radius:    0;
   background-color: $color-blackish;
   margin-top:       -33px;
+  min-height:       $M*2;
+  font:             16px bold 'Open Sans Condensed';
   
-  a {
-    padding: $M $M*2;
+  @media (max-width: $bs-screen-lg) {
+    margin-top: -28px;
+  }
+  
+  @media (max-width: $bs-screen-md) {
+    margin-top: -23px;
+  }
+  
+  @media (max-width: $bs-screen-sm) {
+    min-height: 0;
+    margin-left: -16px;
+    margin-right: -16px;
   }
   
   .navbar-collapse {
@@ -220,11 +270,11 @@ a {
   }
   
   .nav li {
-    border-right: 2px solid $color-almost-black;
-    box-shadow:   1px 0 1px #555;
+    border-left:  1px solid black;
+    border-right: 1px solid #545454 ;
     
     &:hover {
-      border-right:     2px solid $color-dark-maroon;
+      border-right: 1px solid $color-maroon;
       background-color: $color-maroon;
     }
     
@@ -233,7 +283,8 @@ a {
     }
     
     a {
-      color: $color-almost-white;
+      padding: $M $M*2.25;
+      color:   white;
       
       .glyphicon {
         font-size:   16px;
@@ -241,7 +292,29 @@ a {
       }
       
       @media (max-width: $bs-screen-lg) {
-        padding: $M/1.33 $M*1.5;
+        padding: $M/1.33 $M*1.66;
+        
+        .glyphicon {
+          font-size: 14px;
+        }
+      }
+      
+      @media (max-width: $bs-screen-md) {
+        font-size: 12px;
+        padding: $M/2 $M*1.25;
+        
+        .glyphicon {
+          font-size: 12px;
+        }
+      }
+      
+      @media (max-width: $bs-screen-sm) {
+        font-size: 14px;
+        padding: $M/1.5 $M*1.75;
+        
+        .glyphicon {
+          font-size: 14px;
+        }
       }
 
     }
@@ -259,10 +332,17 @@ a {
   background-color: white; 
   width:            1260px; 
   margin:           auto; 
-  margin-top:       70px; 
+  margin-top:       52px;
+  font:             14px 'Arial';
+  color:            #3a3a3a;
   
   @media (max-width: 1260px) {
     width: auto;
+  }
+  
+  @media (max-width: $bs-screen-sm) {
+    padding-top: $M;
+    margin-top: $M;
   }
 }
 
@@ -276,13 +356,15 @@ a {
   .kt-article {
     
     h1, h2 {
-      margin-top: $M*1.5;
+      color:       #252525;
+      margin-top:  $M*1.5;
+      font-weight: bold;
     }
     h1 {
-      font-size: $font-size-article-h1;
+      font-size: $font-size-article-header;
     }
     h2 {
-      font-size:     $font-size-article-h2;
+      font-size:     $font-size-article-header;
       margin-bottom: $M;
     }
     
@@ -291,11 +373,12 @@ a {
       @include kt-bordered;
     }
     
-    .kt-article-info {
+    .kt-article-info {      
       width:         100%;
       padding-left:  0;
       margin-bottom: 0;
-      font-size:     $font-size-article;
+      font-size:     12px;
+      color:         #7a7a7a;
       
       li {
         list-style:   none;
@@ -305,6 +388,14 @@ a {
         &:nth-child(1) {
           margin-left: 0;
         }
+        
+        @media (max-width: $bs-screen-sm) {
+          display: block;
+          
+          & + li {
+            margin-top: $M/3;
+          }
+        }
       }
     }
     
@@ -313,15 +404,19 @@ a {
     }
     
     blockquote {
-      font-size:   $font-size-blockquote-1x;
       font-weight: bold;
       font-style:  italic;
+      font-size:   14px;
+      line-height: 24px;
       margin:      $M*2;
       padding:     $M*0.75 $M*1.5;
       
+      p { font: inherit; }
+      
       footer {
         text-align: right;
-        font-weight: bold;
+        font-size:  13px;
+        color:      #bdbdbd;
         
         cite {
           font-weight: normal;
@@ -330,7 +425,8 @@ a {
     }
     
     .kt-col-blockquote blockquote {
-      font-size:    $font-size-blockquote-1x*2;
+      font-size:    30px;
+      line-height:  1.33;
       margin:       0;
       padding:      $M*0.75;
       padding-left: $M*1.5;
@@ -339,6 +435,8 @@ a {
     .kt-comments-header {
       @extend .text-center;
       margin-top: $M*2;
+      font-weight: bold;
+      font-size:   14px;
     }
     
     .kt-comment {
@@ -374,7 +472,15 @@ a {
             @extend .text-right;
             @include kt-col-v-center;
             padding-right: $M;
+            font-size:     12px;
+            color:         #8d8d8d;
           }
+        }
+        
+        p {
+          font-size:   13px;
+          line-height: 20px;
+          color:       #5b5b5b;
         }
       }
     }
@@ -395,6 +501,10 @@ a {
       .kt-comments-nav-link {
         @include kt-col-v-center;
         @extend .col-xs-6;
+        
+        a {
+          text-decoration: underline;
+        }
       }
       
       .kt-comments-nav-buttons {
@@ -432,8 +542,8 @@ a {
     .kt-table-row-header {
       padding: $M;
       
-      h3 { margin: 0 !important; }
-      h4 { margin: 0 !important; }
+      h3 { margin: 0 !important; font-family: 'Open Sans Condensed'; }
+      h4 { margin: 0 !important; font-family: 'Open Sans Condensed'; }
       
       .kt-table-col-left {
         @extend .col-md-3;
@@ -451,7 +561,7 @@ a {
     }
     
     .kt-table-row {
-      padding: $M/2 0;
+      padding: $M 0;
       
       .kt-table-col-image {
         @extend .col-xs-2;
@@ -471,13 +581,18 @@ a {
         @extend .col-sm-11;
         @extend .col-md-10;
         @include kt-col-v-center;
+        line-height: 1.4;
         
         a {
           font-weight: bold;
           color: $color-maroon;
         }
         .kt-table-article-timestamp {
-          font-size: 0.75em;
+          font-size: 12px;
+          color:     #676767;
+        }
+        .kt-table-article-author {
+          color: #676767;
         }
       }
       
