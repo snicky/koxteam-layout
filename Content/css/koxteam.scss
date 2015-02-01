@@ -719,7 +719,7 @@ a {
     min-height:       $M*10;
     padding-bottom:   $M;
     
-    .kt-footer-bottom-col {
+    @mixin kt-footer-bottom-col {
       padding-top: $M*1.5;
       
       h6 {
@@ -730,12 +730,12 @@ a {
     }
     
     #kt-footer-bottom-map {
-      @extend .kt-footer-bottom-col;
+      @include kt-footer-bottom-col;
       @extend .col-md-2;
     }
     
     #kt-footer-bottom-coop, #kt-footer-bottom-contact {
-      @extend .kt-footer-bottom-col;
+      @include kt-footer-bottom-col;
       @extend .col-md-5;
     }
   }

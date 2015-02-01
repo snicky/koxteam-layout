@@ -6783,9 +6783,15 @@ a {
     border-top: 1px solid #8d8d8d;
     min-height: 200px;
     padding-bottom: 20px; }
-    #kt-footer #kt-footer-bottom .kt-footer-bottom-col, #kt-footer #kt-footer-bottom #kt-footer-bottom-map, #kt-footer #kt-footer-bottom #kt-footer-bottom-coop, #kt-footer #kt-footer-bottom #kt-footer-bottom-contact {
+    #kt-footer #kt-footer-bottom #kt-footer-bottom-map {
       padding-top: 30px; }
-      #kt-footer #kt-footer-bottom .kt-footer-bottom-col h6, #kt-footer #kt-footer-bottom #kt-footer-bottom-map h6, #kt-footer #kt-footer-bottom #kt-footer-bottom-coop h6, #kt-footer #kt-footer-bottom #kt-footer-bottom-contact h6 {
+      #kt-footer #kt-footer-bottom #kt-footer-bottom-map h6 {
+        font-size: 13px;
+        font-weight: bold;
+        margin: 0 0 20px; }
+    #kt-footer #kt-footer-bottom #kt-footer-bottom-coop, #kt-footer #kt-footer-bottom #kt-footer-bottom-contact {
+      padding-top: 30px; }
+      #kt-footer #kt-footer-bottom #kt-footer-bottom-coop h6, #kt-footer #kt-footer-bottom #kt-footer-bottom-contact h6 {
         font-size: 13px;
         font-weight: bold;
         margin: 0 0 20px; }
