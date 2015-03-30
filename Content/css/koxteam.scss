@@ -15,8 +15,11 @@ $M: 20px;
 $bs-margin: 15px;
 
 // Colors
+$color-opacity: 0.85;
+
 $color-almost-black:     #0d0d0d;
 $color-blackish:         #272727;
+$color-blackish-opaque:  rgba(39, 39, 39, $color-opacity);
 
 $color-gray-1:           #333;
 $color-gray-2:           #3a3a3a;
@@ -41,6 +44,7 @@ $color-almost-white:     #fcfcfc;
 
 $color-light-maroon:     #cf0228;
 $color-maroon:           #a00019;
+$color-maroon-opaque:    rgba(160, 0, 25, $color-opacity);
 $color-dark-maroon:      #660000;
 
 // Borders
@@ -102,6 +106,12 @@ a {
 }
 @mixin kt-bg-gray {
   background-color: $color-bg-gray;
+}
+@mixin kt-relatively-aligned-to-bottom($margin) {
+  display:       table;
+  position:      relative;
+  bottom:        $margin;
+  margin-bottom: -$margin;
 }
 
 // --------------------------------------------------------------------------
@@ -382,9 +392,53 @@ a {
       margin-bottom: $M;
     }
     
-    .kt-article-big-image {
+    .kt-big-image {
       @include kt-fit-to-width; 
       @include kt-bordered;
+    }
+    
+    .kt-big-image-overlay {
+      
+      @mixin kt-big-image-overlay-scaling($screen-width, $overlay-height, $font-size) {
+        @media (max-width: $screen-width) {
+          @include kt-relatively-aligned-to-bottom($overlay-height);
+          
+          .kt-big-image-overlay-title, .kt-big-image-overlay-more {
+            height:    $overlay-height;
+            font-size: $font-size;
+          }
+        }
+      }
+      
+      @include kt-big-image-overlay-scaling(9999px,        $M*4,   20px);
+      @include kt-big-image-overlay-scaling($bs-screen-lg, $M*3.5, 18px);
+      @include kt-big-image-overlay-scaling($bs-screen-sm, $M*3,   16px);
+      
+      width: 100%;
+      
+      .kt-big-image-overlay-title, .kt-big-image-overlay-more {
+        font-family:     'Open Sans Condensed';
+        font-weight:     bold;
+        color:           white;
+        text-decoration: none;
+        border-top:      1px solid $color-gray-12;
+        // Flex is not widely supported, but it covers multi-line text centering.
+        // If in need to support IE<10, use line-height = height instead.
+        //
+        display:         flex;
+        align-items:     center;
+      }
+      
+      .kt-big-image-overlay-title {
+        @extend .col-xs-9;
+        background-color: $color-blackish-opaque;
+      }
+      
+      .kt-big-image-overlay-more {
+        @extend .col-xs-3;
+        background-color: $color-maroon-opaque;
+        justify-content:  center;   // Align horizontally in flex.
+      }
     }
     
     .kt-article-info {      

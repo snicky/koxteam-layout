@@ -1574,13 +1574,13 @@ pre code {
   margin-right: -15px;
   margin-left: -15px; }
 
-.col-xs-1, .col-sm-1, #kt-left-panel .kt-article .kt-comment .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-avatar, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-image, .col-md-1, .col-lg-1, .col-xs-2, #kt-left-panel .kt-article .kt-comment .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-avatar, .kt-rigth-panel #kt-social-buttons div, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-image, .col-sm-2, .col-md-2, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-image, #kt-footer #kt-footer-top #kt-footer-logo, #kt-footer #kt-footer-bottom #kt-footer-bottom-map, .col-lg-2, .col-xs-3, #kt-logo-search #kt-col-logo, .col-sm-3, .col-md-3, .col-lg-3, .kt-rigth-panel .kt-table .kt-table-row-header .kt-table-col-left, .col-xs-4, .col-sm-4, .col-md-4, #kt-left-panel .kt-article .kt-comment .kt-comment-col-right .kt-comment-data .kt-comment-time, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right .kt-comment-data .kt-comment-time, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right .kt-comment-data .kt-comment-time, .kt-rigth-panel, .kt-rigth-panel #kt-social-buttons div, .kt-rigth-panel .kt-table .kt-table-row-header .kt-table-col-left, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, #kt-logo-search #kt-col-search-bar, #kt-footer #kt-footer-bottom #kt-footer-bottom-coop, #kt-footer #kt-footer-bottom #kt-footer-bottom-contact, .col-lg-5, .col-xs-6, #kt-logo-search #kt-col-navbar-toggle, #kt-left-panel .kt-article .kt-comments-nav .kt-comments-nav-link, #kt-left-panel .kt-article .kt-comments-nav .kt-comments-nav-buttons, .col-sm-6, #kt-logo-search #kt-col-search-bar, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, #kt-left-panel, #kt-left-panel .kt-article .kt-comment .kt-comment-col-right .kt-comment-data .kt-comment-nick, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right .kt-comment-data .kt-comment-nick, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right .kt-comment-data .kt-comment-nick, .kt-rigth-panel .kt-table .kt-table-row-header .kt-table-col-right, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .kt-rigth-panel .kt-table .kt-table-row-header .kt-table-col-right, .col-xs-10, #kt-left-panel .kt-article .kt-comment .kt-comment-col-right, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-article-info, .col-sm-10, .col-md-10, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-article-info, #kt-footer #kt-footer-top #kt-footer-more, .col-lg-10, .col-xs-11, .col-sm-11, #kt-left-panel .kt-article .kt-comment .kt-comment-col-right, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-article-info, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, #kt-login-panel, .col-lg-12 {
+.col-xs-1, .col-sm-1, #kt-left-panel .kt-article .kt-comment .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-avatar, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-image, .col-md-1, .col-lg-1, .col-xs-2, #kt-left-panel .kt-article .kt-comment .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-avatar, .kt-rigth-panel #kt-social-buttons div, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-image, .col-sm-2, .col-md-2, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-image, #kt-footer #kt-footer-top #kt-footer-logo, #kt-footer #kt-footer-bottom #kt-footer-bottom-map, .col-lg-2, .col-xs-3, #kt-logo-search #kt-col-logo, #kt-left-panel .kt-article .kt-big-image-overlay .kt-big-image-overlay-more, .col-sm-3, .col-md-3, .col-lg-3, .kt-rigth-panel .kt-table .kt-table-row-header .kt-table-col-left, .col-xs-4, .col-sm-4, .col-md-4, #kt-left-panel .kt-article .kt-comment .kt-comment-col-right .kt-comment-data .kt-comment-time, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right .kt-comment-data .kt-comment-time, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right .kt-comment-data .kt-comment-time, .kt-rigth-panel, .kt-rigth-panel #kt-social-buttons div, .kt-rigth-panel .kt-table .kt-table-row-header .kt-table-col-left, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, #kt-logo-search #kt-col-search-bar, #kt-footer #kt-footer-bottom #kt-footer-bottom-coop, #kt-footer #kt-footer-bottom #kt-footer-bottom-contact, .col-lg-5, .col-xs-6, #kt-logo-search #kt-col-navbar-toggle, #kt-left-panel .kt-article .kt-comments-nav .kt-comments-nav-link, #kt-left-panel .kt-article .kt-comments-nav .kt-comments-nav-buttons, .col-sm-6, #kt-logo-search #kt-col-search-bar, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, #kt-left-panel, #kt-left-panel .kt-article .kt-comment .kt-comment-col-right .kt-comment-data .kt-comment-nick, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right .kt-comment-data .kt-comment-nick, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right .kt-comment-data .kt-comment-nick, .kt-rigth-panel .kt-table .kt-table-row-header .kt-table-col-right, .col-lg-8, .col-xs-9, #kt-left-panel .kt-article .kt-big-image-overlay .kt-big-image-overlay-title, .col-sm-9, .col-md-9, .col-lg-9, .kt-rigth-panel .kt-table .kt-table-row-header .kt-table-col-right, .col-xs-10, #kt-left-panel .kt-article .kt-comment .kt-comment-col-right, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-article-info, .col-sm-10, .col-md-10, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-article-info, #kt-footer #kt-footer-top #kt-footer-more, .col-lg-10, .col-xs-11, .col-sm-11, #kt-left-panel .kt-article .kt-comment .kt-comment-col-right, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-article-info, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, #kt-login-panel, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px; }
 
-.col-xs-1, .col-xs-2, #kt-left-panel .kt-article .kt-comment .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-avatar, .kt-rigth-panel #kt-social-buttons div, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-image, .col-xs-3, #kt-logo-search #kt-col-logo, .col-xs-4, .col-xs-5, .col-xs-6, #kt-logo-search #kt-col-navbar-toggle, #kt-left-panel .kt-article .kt-comments-nav .kt-comments-nav-link, #kt-left-panel .kt-article .kt-comments-nav .kt-comments-nav-buttons, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, #kt-left-panel .kt-article .kt-comment .kt-comment-col-right, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-article-info, .col-xs-11, .col-xs-12 {
+.col-xs-1, .col-xs-2, #kt-left-panel .kt-article .kt-comment .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-avatar, .kt-rigth-panel #kt-social-buttons div, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-image, .col-xs-3, #kt-logo-search #kt-col-logo, #kt-left-panel .kt-article .kt-big-image-overlay .kt-big-image-overlay-more, .col-xs-4, .col-xs-5, .col-xs-6, #kt-logo-search #kt-col-navbar-toggle, #kt-left-panel .kt-article .kt-comments-nav .kt-comments-nav-link, #kt-left-panel .kt-article .kt-comments-nav .kt-comments-nav-buttons, .col-xs-7, .col-xs-8, .col-xs-9, #kt-left-panel .kt-article .kt-big-image-overlay .kt-big-image-overlay-title, .col-xs-10, #kt-left-panel .kt-article .kt-comment .kt-comment-col-right, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-article-info, .col-xs-11, .col-xs-12 {
   float: left; }
 
 .col-xs-12 {
@@ -1592,7 +1592,7 @@ pre code {
 .col-xs-10, #kt-left-panel .kt-article .kt-comment .kt-comment-col-right, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-right, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-right, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-article-info {
   width: 83.33333333%; }
 
-.col-xs-9 {
+.col-xs-9, #kt-left-panel .kt-article .kt-big-image-overlay .kt-big-image-overlay-title {
   width: 75%; }
 
 .col-xs-8 {
@@ -1610,7 +1610,7 @@ pre code {
 .col-xs-4 {
   width: 33.33333333%; }
 
-.col-xs-3, #kt-logo-search #kt-col-logo {
+.col-xs-3, #kt-logo-search #kt-col-logo, #kt-left-panel .kt-article .kt-big-image-overlay .kt-big-image-overlay-more {
   width: 25%; }
 
 .col-xs-2, #kt-left-panel .kt-article .kt-comment .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-odd .kt-comment-col-avatar, #kt-left-panel .kt-article .kt-comment-even .kt-comment-col-avatar, .kt-rigth-panel #kt-social-buttons div, .kt-rigth-panel .kt-table .kt-table-row .kt-table-col-image {
@@ -6594,9 +6594,51 @@ a {
 #kt-left-panel .kt-article h2 {
   font-size: 20px;
   margin-bottom: 20px; }
-#kt-left-panel .kt-article .kt-article-big-image {
+#kt-left-panel .kt-article .kt-big-image {
   max-width: 100%;
   border: 1px solid #d8d8d8; }
+#kt-left-panel .kt-article .kt-big-image-overlay {
+  width: 100%; }
+  @media (max-width: 9999px) {
+    #kt-left-panel .kt-article .kt-big-image-overlay {
+      display: table;
+      position: relative;
+      bottom: 80px;
+      margin-bottom: -80px; }
+      #kt-left-panel .kt-article .kt-big-image-overlay .kt-big-image-overlay-title, #kt-left-panel .kt-article .kt-big-image-overlay .kt-big-image-overlay-more {
+        height: 80px;
+        font-size: 20px; } }
+  @media (max-width: 1200px) {
+    #kt-left-panel .kt-article .kt-big-image-overlay {
+      display: table;
+      position: relative;
+      bottom: 70px;
+      margin-bottom: -70px; }
+      #kt-left-panel .kt-article .kt-big-image-overlay .kt-big-image-overlay-title, #kt-left-panel .kt-article .kt-big-image-overlay .kt-big-image-overlay-more {
+        height: 70px;
+        font-size: 18px; } }
+  @media (max-width: 768px) {
+    #kt-left-panel .kt-article .kt-big-image-overlay {
+      display: table;
+      position: relative;
+      bottom: 60px;
+      margin-bottom: -60px; }
+      #kt-left-panel .kt-article .kt-big-image-overlay .kt-big-image-overlay-title, #kt-left-panel .kt-article .kt-big-image-overlay .kt-big-image-overlay-more {
+        height: 60px;
+        font-size: 16px; } }
+  #kt-left-panel .kt-article .kt-big-image-overlay .kt-big-image-overlay-title, #kt-left-panel .kt-article .kt-big-image-overlay .kt-big-image-overlay-more {
+    font-family: 'Open Sans Condensed';
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-top: 1px solid #c1c1c1;
+    display: flex;
+    align-items: center; }
+  #kt-left-panel .kt-article .kt-big-image-overlay .kt-big-image-overlay-title {
+    background-color: rgba(39, 39, 39, 0.85); }
+  #kt-left-panel .kt-article .kt-big-image-overlay .kt-big-image-overlay-more {
+    background-color: rgba(160, 0, 25, 0.85);
+    justify-content: center; }
 #kt-left-panel .kt-article .kt-article-info {
   width: 100%;
   padding-left: 0;
