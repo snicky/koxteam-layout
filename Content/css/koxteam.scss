@@ -127,6 +127,32 @@ a {
   @extend .kt-box;
   margin: $M 0;
 }
+.kt-switch {
+  @extend .kt-box;
+  margin:         $M 0;
+  padding:        $M $M/1.5;
+  font-weight:    bold;
+  vertical-align: baseline;
+  
+  form {
+    margin: 0;
+    
+    .radio {
+      margin-left: $M;
+      font-size:   13px;
+      
+      @media (min-width: $bs-screen-sm) {
+        &:first-child {
+          margin-left: $M*2;
+        }
+      }
+
+      input {
+        margin-right: $M/4;
+      }
+    }
+  }
+}
 .kt-btn-black {
   background-color: $color-blackish;
   color:            $color-almost-white;
@@ -135,6 +161,58 @@ a {
     background-color: $color-almost-black;
     color:            $color-almost-white;
   }
+}
+.kt-big-image {
+  @include kt-fit-to-width; 
+  @include kt-bordered;
+}
+
+.kt-big-image-overlay {
+  
+  @mixin kt-big-image-overlay-scaling($screen-width, $overlay-height, $font-size) {
+    @media (max-width: $screen-width) {
+      @include kt-relatively-aligned-to-bottom($overlay-height);
+      
+      .kt-big-image-overlay-title, .kt-big-image-overlay-more {
+        height:    $overlay-height;
+        font-size: $font-size;
+      }
+    }
+  }
+  
+  @include kt-big-image-overlay-scaling(9999px,        $M*4,   20px);
+  @include kt-big-image-overlay-scaling($bs-screen-lg, $M*3.5, 18px);
+  @include kt-big-image-overlay-scaling($bs-screen-sm, $M*3,   16px);
+  
+  width: 100%;
+  
+  .kt-big-image-overlay-title, .kt-big-image-overlay-more {
+    font-family:     'Open Sans Condensed';
+    font-weight:     bold;
+    color:           white;
+    text-decoration: none;
+    border-top:      1px solid $color-gray-12;
+    // Flex is not widely supported, but it covers multi-line text centering.
+    // If in need to support IE<10, use line-height = height instead.
+    //
+    display:         flex;
+    align-items:     center;
+  }
+  
+  .kt-big-image-overlay-title {
+    @extend .col-xs-9;
+    background-color: $color-blackish-opaque;
+  }
+  
+  .kt-big-image-overlay-more {
+    @extend .col-xs-3;
+    background-color: $color-maroon-opaque;
+    justify-content:  center;   // Align horizontally in flex.
+  }
+}
+
+.kt-comments-count, a.kt-comments-count {
+  color: $color-maroon;
 }
 
 // --------------------------------------------------------------------------
@@ -392,55 +470,6 @@ a {
       margin-bottom: $M;
     }
     
-    .kt-big-image {
-      @include kt-fit-to-width; 
-      @include kt-bordered;
-    }
-    
-    .kt-big-image-overlay {
-      
-      @mixin kt-big-image-overlay-scaling($screen-width, $overlay-height, $font-size) {
-        @media (max-width: $screen-width) {
-          @include kt-relatively-aligned-to-bottom($overlay-height);
-          
-          .kt-big-image-overlay-title, .kt-big-image-overlay-more {
-            height:    $overlay-height;
-            font-size: $font-size;
-          }
-        }
-      }
-      
-      @include kt-big-image-overlay-scaling(9999px,        $M*4,   20px);
-      @include kt-big-image-overlay-scaling($bs-screen-lg, $M*3.5, 18px);
-      @include kt-big-image-overlay-scaling($bs-screen-sm, $M*3,   16px);
-      
-      width: 100%;
-      
-      .kt-big-image-overlay-title, .kt-big-image-overlay-more {
-        font-family:     'Open Sans Condensed';
-        font-weight:     bold;
-        color:           white;
-        text-decoration: none;
-        border-top:      1px solid $color-gray-12;
-        // Flex is not widely supported, but it covers multi-line text centering.
-        // If in need to support IE<10, use line-height = height instead.
-        //
-        display:         flex;
-        align-items:     center;
-      }
-      
-      .kt-big-image-overlay-title {
-        @extend .col-xs-9;
-        background-color: $color-blackish-opaque;
-      }
-      
-      .kt-big-image-overlay-more {
-        @extend .col-xs-3;
-        background-color: $color-maroon-opaque;
-        justify-content:  center;   // Align horizontally in flex.
-      }
-    }
-    
     .kt-article-info {      
       width:         100%;
       padding-left:  0;
@@ -612,127 +641,197 @@ a {
     
   }
   
-  .kt-table {
-    width:         100%;
-    border-top:    $border-gray;
-    margin-bottom: $M;
+}
+
+// --------------------------------------------------------------------------
+// ---- KT TABLE -----------------------------------------------------------
+// --------------------------------------------------------------------------
+
+.kt-table {
+  width:         100%;
+  border-top:    $border-gray;
+  margin-bottom: $M;
+  
+  &:last-child {
+    margin-bottom: $M*2;
+  }
+  
+  .kt-table-col-left {
+    @extend .col-lg-3;
+    @extend .col-md-4;
+    @extend .text-center;
+    @include kt-col-v-center;
+    padding: $M*1.5;
+    border-right: $border-gray;
     
-    &:last-child {
-      margin-bottom: $M*2;
+    .kt-hc-icon-popularne {
+      margin-left: -12px;
+      margin-top:  -8px;
+    }
+  }
+  
+  .kt-table-col-right {
+    @extend .col-lg-9;
+    @extend .col-md-8;
+    @include kt-col-v-center;
+  }
+  
+  .kt-table-col-image {
+    @include kt-col-v-center;
+    img {
+      @include kt-fit-to-width;
+    }
+  }
+  
+  .kt-table-row-header {
+    h1, h2, h3, h4, h5 {
+      margin: 0 !important; font-family: 'Open Sans Condensed';
     }
     
-    .kt-table-row-header {
-      h1, h2, h3, h4, h5 {
-        margin: 0 !important; font-family: 'Open Sans Condensed';
+    .glyphicon {
+      font-size: $M*2 !important;  
+    }
+    
+    .kt-table-col-right {
+      padding-left: $M*1.5;
+    }
+  }
+  
+  .kt-table-row-article-link {
+    padding: $M 0;
+    
+    .kt-table-col-image {
+      @extend .col-xs-2;
+      @extend .col-sm-1;
+      @extend .col-md-2;
+      padding-right: $M/4;
+      
+      img {
+        @include kt-bordered;
+      }
+    }
+    
+    .kt-table-col-article-info {
+      @extend .col-xs-10;
+      @extend .col-sm-11;
+      @extend .col-md-10;
+      @include kt-col-v-center;
+      line-height: 1.4;
+      
+      a {
+        font-weight: bold;
+        color: $color-maroon;
+      }
+      .kt-table-article-timestamp {
+        font-size: 12px;
+        color:     $color-gray-5;
+      }
+      .kt-table-article-author {
+        color: $color-gray-5;
+      }
+    }
+    
+  }
+  
+  .kt-table-row {
+    
+    .kt-table-col-image {
+      @extend .kt-table-col-left;
+      @extend .col-sm-3;
+      
+      border:  0;
+      padding: $M/2;
+      
+      img {
+        @include kt-fit-to-width;
+      }
+    }
+    
+    .kt-table-col-article {
+      @extend .kt-table-col-right;
+      @extend .col-sm-9;
+      
+      border-left: $border-gray;
+      
+      h3 {
+        margin: $M/1.5 0;
+        font: bold 20px Arial;
       }
       
-      .kt-table-col-left {
-        @extend .col-lg-3;
-        @extend .col-md-4;
-        @extend .text-center;
+      h3, p {
+        margin-left: $M;
+      }
+      
+      padding: 0;
+      
+      .kt-table-row-tags-more {
+        border-top:   $border-gray;
+      }
+      
+      .kt-table-col-tags {
         @include kt-col-v-center;
-        padding: $M*1.5;
-        border-right: $border-gray;
-        
-        .kt-hc-icon-popularne {
-          margin-left: -12px;
-          margin-top:  -8px;
-        }
-      }
-      
-      .kt-table-col-right {
         @extend .col-lg-9;
-        @extend .col-md-8;
+        @extend .col-xs-8;
+        @extend .text-left;
+        border:       0;
+        border-right: $border-gray;
+        padding:      $M/1.5 $M;
+      }
+      
+      .kt-table-col-more {
         @include kt-col-v-center;
-        padding-left: $M*1.5;
+        @extend .col-lg-3;
+        @extend .col-xs-4;
+        @extend .text-center;
+        padding:     $M/1.5 $M;
+        font-weight: bold;
       }
       
-      .glyphicon {
-        font-size: $M*2 !important;  
-      }
-    }
-    
-    .kt-table-row {
-      padding: $M 0;
-      
-      .kt-table-col-image {
-        @extend .col-xs-2;
-        @extend .col-sm-1;
-        @extend .col-md-2;
-        @include kt-col-v-center;
-        padding-right: $M/4;
-        
-        img {
-          @include kt-bordered;
-          @include kt-fit-to-width;
-        }
-      }
-      
-      .kt-table-col-article-info {
-        @extend .col-xs-10;
-        @extend .col-sm-11;
-        @extend .col-md-10;
-        @include kt-col-v-center;
-        line-height: 1.4;
-        
-        a {
-          font-weight: bold;
-          color: $color-maroon;
-        }
-        .kt-table-article-timestamp {
-          font-size: 12px;
-          color:     $color-gray-5;
-        }
-        .kt-table-article-author {
-          color: $color-gray-5;
-        }
-      }
-      
-    }
-    
-    .kt-table-row-header, .kt-table-row {
-      border:           $border-gray;
-      border-top:       0;
-      background-color: $color-bg-pale-gray;
-    }
-    
-  }
-  
-  .kt-table-black, .kt-table-maroon {
-    .kt-table-row-header {
-      border: 0;
-      
-      .kt-table-col-right {
-        color: $color-gray-15;
-      }
     }
   }
   
-  .kt-table-black {
-    
-    .kt-table-row-header {
-      background-color: $color-blackish;
-      
-      .kt-table-col-left {
-        border-right: 1px solid #545454;
-        box-shadow:   1px 0 0 black;
-      }
-    }
-    
+  .kt-table-row, .kt-table-row-header, .kt-table-row-article-link {
+    border:           $border-gray;
+    border-top:       0;
+    background-color: $color-bg-pale-gray;
   }
   
-  .kt-table-maroon {
-    
-    .kt-table-row-header {
-      background-color: $color-maroon;
-      
-      .kt-table-col-left {
-        border-right: 1px solid $color-dark-maroon;
-        box-shadow:   1px 0 0 $color-light-maroon;
-      }
-    }
-    
+}
+
+.kt-table-black, .kt-table-maroon {
+  .kt-table-row-header {
+    border: 0;
   }
+  
+  .kt-table-col-right {
+    color: $color-gray-15;
+  }
+}
+
+.kt-table-black {
+  
+  .kt-table-row-header {
+    background-color: $color-blackish;
+  }
+  
+  .kt-table-col-left {
+    border-right: 1px solid #545454;
+    box-shadow:   1px 0 0 black;
+  }
+  
+}
+
+.kt-table-maroon {
+  
+  .kt-table-row-header {
+    background-color: $color-maroon;
+  }
+  
+  .kt-table-col-left {
+    border-right: 1px solid $color-dark-maroon;
+    box-shadow:   1px 0 0 $color-light-maroon;
+  }
+  
 }
 
 // --------------------------------------------------------------------------
