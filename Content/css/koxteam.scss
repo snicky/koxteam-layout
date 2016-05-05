@@ -66,7 +66,7 @@ $images-path: '../images/';
 
 a {
   color: $color-gray-1;
-  
+
   &:hover {
     color: $color-gray-1;
   }
@@ -133,14 +133,14 @@ a {
   padding:        $M $M/1.5;
   font-weight:    bold;
   vertical-align: baseline;
-  
+
   form {
     margin: 0;
-    
+
     .radio {
       margin-left: $M;
       font-size:   13px;
-      
+
       @media (min-width: $bs-screen-sm) {
         &:first-child {
           margin-left: $M*2;
@@ -156,36 +156,36 @@ a {
 .kt-btn-black {
   background-color: $color-blackish;
   color:            $color-almost-white;
-  
+
   &:hover {
     background-color: $color-almost-black;
     color:            $color-almost-white;
   }
 }
 .kt-big-image {
-  @include kt-fit-to-width; 
+  @include kt-fit-to-width;
   @include kt-bordered;
 }
 
 .kt-big-image-overlay {
-  
+
   @mixin kt-big-image-overlay-scaling($screen-width, $overlay-height, $font-size) {
     @media (max-width: $screen-width) {
       @include kt-relatively-aligned-to-bottom($overlay-height);
-      
+
       .kt-big-image-overlay-title, .kt-big-image-overlay-more {
         height:    $overlay-height;
         font-size: $font-size;
       }
     }
   }
-  
+
   @include kt-big-image-overlay-scaling(9999px,        $M*4,   20px);
   @include kt-big-image-overlay-scaling($bs-screen-lg, $M*3.5, 18px);
   @include kt-big-image-overlay-scaling($bs-screen-sm, $M*3,   16px);
-  
+
   width: 100%;
-  
+
   .kt-big-image-overlay-title, .kt-big-image-overlay-more {
     font-family:     'Open Sans Condensed';
     font-weight:     bold;
@@ -198,12 +198,12 @@ a {
     display:         flex;
     align-items:     center;
   }
-  
+
   .kt-big-image-overlay-title {
     @extend .col-xs-9;
     background-color: $color-blackish-opaque;
   }
-  
+
   .kt-big-image-overlay-more {
     @extend .col-xs-3;
     background-color: $color-maroon-opaque;
@@ -234,16 +234,16 @@ a {
 #kt-login-panel {
   @extend .col-md-12;
   @extend .text-right;
-  
+
   a {
     color: $color-gray-13;
     font:  14px bold 'Arial';
-    
+
     span {
       color:        $color-gray-5;
       margin-right: $M/3;
     }
-    
+
     &:hover {
       color: $color-almost-white;
       span { color: $color-gray-8; }
@@ -257,29 +257,29 @@ a {
 
 #kt-logo-search {
   margin-top: $M/2;
-  
+
   #kt-col-logo {
     @extend .col-xs-3;
     @include kt-col-v-center;
   }
-  
+
   #kt-col-search-bar {
     @extend .col-md-5;
     @extend .col-md-offset-4;
     @extend .col-sm-6;
     @extend .col-sm-offset-3;
     @include kt-col-v-center;
-    
+
     @media (max-width: $bs-screen-sm) {
       display: none;
     }
-    
+
     form {
       margin-bottom: 0;   // Form has a 1em margin-bottom by default.
-      
+
       .form-group {
         margin: 0;
-        
+
         .form-control {
           border:           $border-dark-gray;
           border-right:     0;
@@ -288,25 +288,25 @@ a {
           color:            $color-gray-7;
           padding:          $M*1.2;
           font:             14px 'Arial';
-          
+
           &:focus {
             box-shadow: none;
           }
-          
+
           @media (max-width: $bs-screen-md) {
             padding: $M;
           }
         }
-        
+
         .input-group-btn {
           border:           $border-dark-gray;
           border-left:      0;
           background-color: black;
-          
+
           .btn {
             background-color: black;
             outline:          none;
-            
+
             span {
               color: $color-maroon;
             }
@@ -315,23 +315,23 @@ a {
       }
     }
   }
-  
+
   #kt-col-navbar-toggle {
     @extend .col-xs-6;
     @extend .col-xs-offset-3;
     @include kt-col-v-bottom;
-    
+
     #kt-navbar-toggle {
       background-color: rgba(60,60,60,0.7);
       border-color:     $color-gray-10;
       color:            $color-gray-5;
       border-radius:    0;
-      
+
       &:hover {
         border-color: $color-gray-12;
         color:        $color-gray-9;
       }
-      
+
       &.collapsed {
         background: none;
       }
@@ -349,76 +349,77 @@ a {
   margin-top:       -33px;
   min-height:       $M*2;
   font:             16px bold 'Open Sans Condensed';
-  
+
   @media (max-width: $bs-screen-lg) {
     margin-top: -28px;
   }
-  
+
   @media (max-width: $bs-screen-md) {
     margin-top: -23px;
   }
-  
+
   @media (max-width: $bs-screen-sm) {
     min-height:   0;
     margin-left:  -$bs-margin;
     margin-right: -$bs-margin;
   }
-  
+
   .navbar-collapse {
     padding-left:  0;
     padding-right: 0;
+    overflow:      hidden;
   }
-  
+
   .nav li {
     border-left:  1px solid black;
     border-right: 1px solid $color-gray-3;
-    
+
     &:hover {
       border-right: 1px solid $color-maroon;
       background-color: $color-maroon;
     }
-    
+
     &:first-child {
       border-left: 0;
     }
-    
+
     a {
-      padding: $M $M*2.25;
+      padding: $M $M*2.165;
       color:   white;
-      
+
       .glyphicon {
         font-size:   16px;
         line-height: 20px;
       }
-      
+
       @media (max-width: $bs-screen-lg) {
-        padding: $M/1.33 $M*1.66;
-        
+        padding: $M/1.33 $M*1.545;
+
         .glyphicon {
           font-size: 14px;
         }
       }
-      
+
       @media (max-width: $bs-screen-md) {
         font-size: 12px;
-        padding: $M/2 $M*1.25;
-        
+        padding:   $M/2 $M*1.05;
+
         .glyphicon {
           font-size: 12px;
         }
       }
-      
+
       @media (max-width: $bs-screen-sm) {
         font-size: 14px;
         padding: $M/1.5 $M*1.75;
-        
+
         .glyphicon {
           font-size: 14px;
         }
       }
 
     }
-  
+
   }
 }
 
@@ -428,20 +429,20 @@ a {
 
 #kt-white-sheet {
   @include kt-bordered-pale;
-  
+
   background-color: white;
   box-shadow:       0px $M/1.25 $M*1.5 $color-gray-9;
-  width:            1260px; 
-  margin:           auto; 
+  width:            1260px;
+  margin:           auto;
   margin-top:       52px;
   font:             14px 'Arial';
   color:            $color-gray-2;
-  
+
   @media (max-width: 1260px) {
     width:  auto;
     border: 0;
   }
-  
+
   @media (max-width: $bs-screen-sm) {
     padding-top: $M;
     margin-top:  $M*1.5;
@@ -454,9 +455,9 @@ a {
 
 #kt-left-panel {
   @extend .col-md-8;
-  
+
   .kt-article {
-    
+
     h1, h2 {
       color:       $color-blackish;
       margin-top:  $M*1.5;
@@ -469,37 +470,37 @@ a {
       font-size:     $font-size-article-header;
       margin-bottom: $M;
     }
-    
-    .kt-article-info {      
+
+    .kt-article-info {
       width:         100%;
       padding-left:  0;
       margin-bottom: 0;
       font-size:     12px;
       color:         $color-gray-6;
-      
+
       li {
         list-style:   none;
         display:      inline-block;
         margin-right: $M;
-        
+
         &:nth-child(1) {
           margin-left: 0;
         }
-        
+
         @media (max-width: $bs-screen-sm) {
           display: block;
-          
+
           & + li {
             margin-top: $M/3;
           }
         }
       }
     }
-    
+
     p {
       line-height: 1.5;
     }
-    
+
     blockquote {
       font-weight: bold;
       font-style:  italic;
@@ -507,20 +508,20 @@ a {
       line-height: 24px;
       margin:      $M*2;
       padding:     $M*0.75 $M*1.5;
-      
+
       p { font: inherit; }
-      
+
       footer {
         text-align: right;
         font-size:  13px;
         color:      $color-gray-11;
-        
+
         cite {
           font-weight: normal;
         }
       }
     }
-    
+
     .kt-col-blockquote blockquote {
       font-size:    30px;
       line-height:  1.33;
@@ -528,42 +529,42 @@ a {
       padding:      $M*0.75;
       padding-left: $M*1.5;
     }
-    
+
     .kt-comments-header {
       @extend .text-center;
       margin-top: $M*2;
       font-weight: bold;
       font-size:   14px;
     }
-    
+
     .kt-comment {
       @extend .kt-box;
       margin-bottom: $M/4;
-      
+
       .kt-comment-col-avatar {
         @extend .col-xs-2;
         @extend .col-sm-1;
-        
+
         padding-right: $M/4;
-        
+
         img {
           @include kt-fit-to-width;
         }
       }
-      
+
       .kt-comment-col-right {
         @extend .col-xs-10;
         @extend .col-sm-11;
-        
+
         .kt-comment-data {
           @extend .row;
           margin-bottom: $M/4;
-          
+
           .kt-comment-nick {
             @extend .col-md-8;
             @include kt-col-v-center;
           }
-          
+
           .kt-comment-time {
             @extend .col-md-4;
             @extend .text-right;
@@ -573,7 +574,7 @@ a {
             color:         $color-gray-9;
           }
         }
-        
+
         p {
           font-size:   13px;
           line-height: 20px;
@@ -581,29 +582,29 @@ a {
         }
       }
     }
-    
+
     .kt-comment-odd {
       @include kt-bg-gray;
       @extend .kt-comment;
     }
-    
+
     .kt-comment-even {
       @include kt-bg-pale-gray;
       @extend .kt-comment;
     }
-    
+
     .kt-comments-nav {
       @extend .kt-box;
-      
+
       .kt-comments-nav-link {
         @include kt-col-v-center;
         @extend .col-xs-6;
-        
+
         a {
           text-decoration: underline;
         }
       }
-      
+
       .kt-comments-nav-buttons {
         @include kt-col-v-center;
         @extend .col-xs-6;
@@ -621,26 +622,26 @@ a {
   @extend .col-md-4;
   margin-left:   $bs-margin;
   margin-right: -$bs-margin;
-  
+
   @media (max-width: $bs-screen-md) {
     margin-left:  -$bs-margin;
     margin-right: -$bs-margin;
   }
-  
+
   #kt-social-buttons {
     margin-bottom: $M;
-    
+
     div {
       @extend .col-md-4;
       @extend .col-xs-2;
-      
+
       img {
         width: 100%;
       }
     }
-    
+
   }
-  
+
 }
 
 // --------------------------------------------------------------------------
@@ -651,11 +652,11 @@ a {
   width:         100%;
   border-top:    $border-gray;
   margin-bottom: $M;
-  
+
   &:last-child {
     margin-bottom: $M*2;
   }
-  
+
   .kt-table-col-left {
     @extend .col-lg-3;
     @extend .col-md-4;
@@ -663,61 +664,61 @@ a {
     @include kt-col-v-center;
     padding: $M*1.5;
     border-right: $border-gray;
-    
+
     .kt-hc-icon-popularne {
       margin-left: -12px;
       margin-top:  -8px;
     }
   }
-  
+
   .kt-table-col-right {
     @extend .col-lg-9;
     @extend .col-md-8;
     @include kt-col-v-center;
   }
-  
+
   .kt-table-col-image {
     @include kt-col-v-center;
     img {
       @include kt-fit-to-width;
     }
   }
-  
+
   .kt-table-row-header {
     h1, h2, h3, h4, h5 {
       margin: 0 !important; font-family: 'Open Sans Condensed';
     }
-    
+
     .glyphicon {
-      font-size: $M*2 !important;  
+      font-size: $M*2 !important;
     }
-    
+
     .kt-table-col-right {
       padding-left: $M*1.5;
     }
   }
-  
+
   .kt-table-row-article-link {
     padding: $M 0;
-    
+
     .kt-table-col-image {
       @extend .col-xs-2;
       @extend .col-sm-1;
       @extend .col-md-2;
       padding-right: $M/4;
-      
+
       img {
         @include kt-bordered;
       }
     }
-    
+
     .kt-table-col-article-info {
       @extend .col-xs-10;
       @extend .col-sm-11;
       @extend .col-md-10;
       @include kt-col-v-center;
       line-height: 1.4;
-      
+
       a {
         font-weight: bold;
         color: $color-maroon;
@@ -730,44 +731,44 @@ a {
         color: $color-gray-5;
       }
     }
-    
+
   }
-  
+
   .kt-table-row {
-    
+
     .kt-table-col-image {
       @extend .kt-table-col-left;
       @extend .col-sm-3;
-      
+
       border:  0;
       padding: $M/2;
-      
+
       img {
         @include kt-fit-to-width;
       }
     }
-    
+
     .kt-table-col-article {
       @extend .kt-table-col-right;
       @extend .col-sm-9;
-      
+
       border-left: $border-gray;
-      
+
       h3 {
         margin: $M/1.5 0;
         font: bold 20px Arial;
       }
-      
+
       h3, p {
         margin-left: $M;
       }
-      
+
       padding: 0;
-      
+
       .kt-table-row-tags-more {
         border-top:   $border-gray;
       }
-      
+
       .kt-table-col-tags {
         @include kt-col-v-center;
         @extend .col-lg-9;
@@ -777,7 +778,7 @@ a {
         border-right: $border-gray;
         padding:      $M/1.5 $M;
       }
-      
+
       .kt-table-col-more {
         @include kt-col-v-center;
         @extend .col-lg-3;
@@ -786,52 +787,52 @@ a {
         padding:     $M/1.5 $M;
         font-weight: bold;
       }
-      
+
     }
   }
-  
+
   .kt-table-row, .kt-table-row-header, .kt-table-row-article-link {
     border:           $border-gray;
     border-top:       0;
     background-color: $color-bg-pale-gray;
   }
-  
+
 }
 
 .kt-table-black, .kt-table-maroon {
   .kt-table-row-header {
     border: 0;
   }
-  
+
   .kt-table-col-right {
     color: $color-gray-15;
   }
 }
 
 .kt-table-black {
-  
+
   .kt-table-row-header {
     background-color: $color-blackish;
   }
-  
+
   .kt-table-col-left {
     border-right: 1px solid #545454;
     box-shadow:   1px 0 0 black;
   }
-  
+
 }
 
 .kt-table-maroon {
-  
+
   .kt-table-row-header {
     background-color: $color-maroon;
   }
-  
+
   .kt-table-col-left {
     border-right: 1px solid $color-dark-maroon;
     box-shadow:   1px 0 0 $color-light-maroon;
   }
-  
+
 }
 
 // --------------------------------------------------------------------------
@@ -844,49 +845,49 @@ a {
   color: $color-gray-14;
   line-height: 1.66;
   font-size: 13px;
-  
+
   a {
     color: $color-gray-14;
     text-decoration: underline;
   }
-  
+
   #kt-footer-top {
     background-color: black;
     min-height: $M*3;
     padding: $M;
-    
+
     #kt-footer-logo {
       @extend .col-md-2;
       @include kt-col-v-center;
     }
-    
+
     #kt-footer-more {
       @extend .col-md-10;
       @include kt-col-v-center;
     }
   }
-  
+
   #kt-footer-bottom {
     background-color: $color-blackish;
     border-top:       $border-dark-gray;
     min-height:       $M*10;
     padding-bottom:   $M;
-    
+
     @mixin kt-footer-bottom-col {
       padding-top: $M*1.5;
-      
+
       h6 {
         font-size: 13px;
         font-weight: bold;
         margin: 0 0 20px;
       }
     }
-    
+
     #kt-footer-bottom-map {
       @include kt-footer-bottom-col;
       @extend .col-md-2;
     }
-    
+
     #kt-footer-bottom-coop, #kt-footer-bottom-contact {
       @include kt-footer-bottom-col;
       @extend .col-md-5;
