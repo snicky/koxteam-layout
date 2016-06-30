@@ -6547,18 +6547,19 @@ a {
       #kt-logo-search #kt-col-search-bar form .form-group {
         margin: 0; }
         #kt-logo-search #kt-col-search-bar form .form-group .form-control {
+          height: auto;
           border: 1px solid #8d8d8d;
           border-right: 0;
           border-radius: 0;
           background-color: black;
           color: #737373;
-          padding: 24px;
+          padding: 15.03759px;
           font: 14px 'Arial'; }
           #kt-logo-search #kt-col-search-bar form .form-group .form-control:focus {
             box-shadow: none; }
           @media (max-width: 992px) {
             #kt-logo-search #kt-col-search-bar form .form-group .form-control {
-              padding: 20px; } }
+              padding: 12.04819px; } }
         #kt-logo-search #kt-col-search-bar form .form-group .input-group-btn {
           border: 1px solid #8d8d8d;
           border-left: 0;

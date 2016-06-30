@@ -286,12 +286,13 @@ a {
         margin: 0;
 
         .form-control {
+          height:           auto;
           border:           $border-dark-gray;
           border-right:     0;
           border-radius:    0;
           background-color: black;
           color:            $color-gray-7;
-          padding:          $M*1.2;
+          padding:          $M/1.33;
           font:             14px 'Arial';
 
           &:focus {
@@ -299,7 +300,7 @@ a {
           }
 
           @media (max-width: $bs-screen-md) {
-            padding: $M;
+            padding: $M/1.66;
           }
         }
 
