@@ -6460,8 +6460,10 @@ a {
     color: #fcfcfc; }
 
 .kt-big-image {
-  max-width: 100%;
-  border: 1px solid #d8d8d8; }
+  height: 250px;
+  width: 100%;
+  background-position: center;
+  background-size: cover; }
 
 .kt-big-image-overlay {
   width: 100%; }
@@ -6819,14 +6821,11 @@ a {
       font: bold 20px Arial; }
     .kt-table .kt-table-row .kt-table-col-article h3, .kt-table .kt-table-row .kt-table-col-article p {
       margin-left: 20px; }
-    .kt-table .kt-table-row .kt-table-col-article .kt-table-row-tags-more {
-      border-top: 1px solid #d8d8d8; }
     .kt-table .kt-table-row .kt-table-col-article .kt-table-col-tags {
       float: none;
       display: inline-block;
       vertical-align: middle;
       border: 0;
-      border-right: 1px solid #d8d8d8;
       padding: 13.33333px 20px; }
     .kt-table .kt-table-row .kt-table-col-article .kt-table-col-more {
       float: none;
