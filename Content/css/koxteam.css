@@ -6604,37 +6604,49 @@ a {
     padding-left: 0;
     padding-right: 0;
     overflow: hidden; }
-  #kt-navbar .nav li {
-    border-left: 1px solid black;
-    border-right: 1px solid #545454; }
-    #kt-navbar .nav li:hover {
-      border-right: 1px solid #a00019;
-      background-color: #a00019; }
-    #kt-navbar .nav li:first-child {
-      border-left: 0; }
-    #kt-navbar .nav li a {
-      padding: 20px 43.3px;
-      color: white; }
-      #kt-navbar .nav li a .glyphicon {
-        font-size: 16px;
-        line-height: 20px; }
-      @media (max-width: 1200px) {
-        #kt-navbar .nav li a {
-          padding: 15.03759px 30.9px; }
-          #kt-navbar .nav li a .glyphicon {
-            font-size: 14px; } }
-      @media (max-width: 992px) {
-        #kt-navbar .nav li a {
-          font-size: 12px;
-          padding: 10px 21px; }
-          #kt-navbar .nav li a .glyphicon {
-            font-size: 12px; } }
-      @media (max-width: 768px) {
-        #kt-navbar .nav li a {
-          font-size: 14px;
-          padding: 13.33333px 35px; }
-          #kt-navbar .nav li a .glyphicon {
-            font-size: 14px; } }
+  #kt-navbar .nav {
+    display: flex;
+    flex-direction: row;
+    float: none; }
+    @media (max-width: 768px) {
+      #kt-navbar .nav {
+        display: block; } }
+    #kt-navbar .nav li {
+      flex: 1;
+      border-left: 1px solid black;
+      border-right: 1px solid #545454; }
+      #kt-navbar .nav li:hover {
+        border-right: 1px solid #a00019;
+        background-color: #a00019; }
+      #kt-navbar .nav li:first-child {
+        flex: 0;
+        border-left: 0; }
+      #kt-navbar .nav li:last-child {
+        border-right: 0; }
+      #kt-navbar .nav li a {
+        padding: 20px 43.3px;
+        text-align: center;
+        color: white; }
+        #kt-navbar .nav li a .glyphicon {
+          font-size: 16px;
+          line-height: 20px; }
+        @media (max-width: 1200px) {
+          #kt-navbar .nav li a {
+            padding: 15.03759px 30.9px; }
+            #kt-navbar .nav li a .glyphicon {
+              font-size: 14px; } }
+        @media (max-width: 992px) {
+          #kt-navbar .nav li a {
+            font-size: 12px;
+            padding: 10px 21px; }
+            #kt-navbar .nav li a .glyphicon {
+              font-size: 12px; } }
+        @media (max-width: 768px) {
+          #kt-navbar .nav li a {
+            font-size: 14px;
+            padding: 13.33333px 35px; }
+            #kt-navbar .nav li a .glyphicon {
+              font-size: 14px; } }
 
 #kt-white-sheet {
   border: 1px solid #eee;

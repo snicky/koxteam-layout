@@ -375,56 +375,72 @@ a {
     overflow:      hidden;
   }
 
-  .nav li {
-    border-left:  1px solid black;
-    border-right: 1px solid $color-gray-3;
+  .nav {
+    display:        flex;
+    flex-direction: row;
+    float:          none;
 
-    &:hover {
-      border-right: 1px solid $color-maroon;
-      background-color: $color-maroon;
+    @media (max-width: $bs-screen-sm) {
+      display: block;
     }
 
-    &:first-child {
-      border-left: 0;
-    }
+    li {
+      flex:         1;
+      border-left:  1px solid black;
+      border-right: 1px solid $color-gray-3;
 
-    a {
-      padding: $M $M*2.165;
-      color:   white;
-
-      .glyphicon {
-        font-size:   16px;
-        line-height: 20px;
+      &:hover {
+        border-right: 1px solid $color-maroon;
+        background-color: $color-maroon;
       }
 
-      @media (max-width: $bs-screen-lg) {
-        padding: $M/1.33 $M*1.545;
+      &:first-child {
+        flex:        0;
+        border-left: 0;
+      }
+
+      &:last-child {
+        border-right: 0;
+      }
+
+      a {
+        padding:     $M $M*2.165;
+        text-align:  center;
+        color:       white;
 
         .glyphicon {
-          font-size: 14px;
+          font-size:   16px;
+          line-height: 20px;
         }
-      }
 
-      @media (max-width: $bs-screen-md) {
-        font-size: 12px;
-        padding:   $M/2 $M*1.05;
+        @media (max-width: $bs-screen-lg) {
+          padding: $M/1.33 $M*1.545;
 
-        .glyphicon {
+          .glyphicon {
+            font-size: 14px;
+          }
+        }
+
+        @media (max-width: $bs-screen-md) {
           font-size: 12px;
+          padding:   $M/2 $M*1.05;
+
+          .glyphicon {
+            font-size: 12px;
+          }
         }
-      }
 
-      @media (max-width: $bs-screen-sm) {
-        font-size: 14px;
-        padding: $M/1.5 $M*1.75;
-
-        .glyphicon {
+        @media (max-width: $bs-screen-sm) {
           font-size: 14px;
+          padding: $M/1.5 $M*1.75;
+
+          .glyphicon {
+            font-size: 14px;
+          }
         }
+
       }
-
     }
-
   }
 }
 
