@@ -53,6 +53,9 @@ $border-dark-gray: $border-thickness solid $color-gray-9;
 $border-gray:      $border-thickness solid $color-gray-14;
 $border-pale-gray: $border-thickness solid $color-gray-15;
 
+// Fixed element heights
+$kt-big-image-height: 250px;
+
 // Font sizes
 $font-size-article-header: 20px;
 
@@ -163,8 +166,10 @@ a {
   }
 }
 .kt-big-image {
-  @include kt-fit-to-width;
-  @include kt-bordered;
+  height:              $kt-big-image-height;
+  width:               100%;
+  background-position: center;
+  background-size:     cover;
 }
 
 .kt-big-image-overlay {
