@@ -765,17 +765,12 @@ a {
 
       padding: 0;
 
-      .kt-table-row-tags-more {
-        border-top:   $border-gray;
-      }
-
       .kt-table-col-tags {
         @include kt-col-v-center;
         @extend .col-lg-9;
         @extend .col-xs-8;
         @extend .text-left;
         border:       0;
-        border-right: $border-gray;
         padding:      $M/1.5 $M;
       }
 
